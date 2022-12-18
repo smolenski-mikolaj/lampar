@@ -1,0 +1,10 @@
+{
+  "functions": { "source": ".output/server", "runtime": "nodejs18" },
+  "hosting": {
+    "site": "lampar-cbde4",
+    "public": ".output/public",
+    "cleanUrls": true,
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [{ "source": "**", "function": "server" }]
+  }
+}

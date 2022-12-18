@@ -4,12 +4,16 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "deploy": "npm run build && cd .output/server && rd /s /q node_modules && npm install && cd ../../ && firebase deploy",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "firebase-admin": "^11.4.0",
+    "firebase-functions": "^4.1.1",
+    "firebase-functions-test": "^3.0.0",
     "nuxt": "3.0.0",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"

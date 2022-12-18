@@ -5,4 +5,6 @@ node_modules
 .cache
 .output
 .env
+.firebase
 dist
+server/cert.json
