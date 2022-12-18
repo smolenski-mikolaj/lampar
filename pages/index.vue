@@ -1,0 +1,4 @@
+<template>
+  <Navigation />
+  <Content />
+</template>
