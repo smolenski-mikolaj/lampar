@@ -1,9 +1,7 @@
 <template>
   <main class="flex justify-center px-10">
     <Frame>
-      <section
-        class="h-auto md:h-[500px] grid grid-cols-1 md:grid-cols-3 gap-4"
-      >
+      <section class="py-12 md:py-18 grid grid-cols-1 md:grid-cols-3 gap-4">
         <div
           class="order-2 md:order-1 flex justify-center flex-col text-center md:text-left"
         >
@@ -22,12 +20,51 @@
           class="order-1 md:order-2 md:col-span-2 flex justify-center flex-col items-center pointer-events-none"
         >
           <img
-            class="h-[200px] md:h-auto"
+            class="max-h-[200px] md:max-h-[500px]"
             src="~/assets/img/undraw_light_the_fire_gt58.svg"
           />
         </div>
       </section>
-      <section class="py-12 md:py-32 flex justify-center items-center">
+      <section class="py-4 md:py-24 grid grid-cols-1 md:grid-cols-3 md:gap-4">
+        <div class="flex items-center">
+          <h4
+            class="text-[24px] md:text-[28px] text-center md:text-left font-bold leading-8 my-4"
+          >
+            Mamy bogate doświadczenie
+          </h4>
+        </div>
+        <div class="col-span-2 flex justify-center md:block">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 max-w-[200px] md:max-w-none rounded-xl bg-gray-100 p-5"
+          >
+            <div class="flex items-center justify-center my-3">
+              <div class="text-center leading-7 md:leading-10">
+                <h4 class="text-[32px] md:text-[48px] font-bold text-gray-700">
+                  20
+                </h4>
+                <div class="text-sm text-gray-500">partnerów</div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center my-3">
+              <div class="text-center leading-7 md:leading-10">
+                <h4 class="text-[32px] md:text-[48px] font-bold text-gray-700">
+                  1000
+                </h4>
+                <div class="text-sm text-gray-500">zrealizowanych usług</div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center my-3">
+              <div class="text-center leading-7 md:leading-10">
+                <h4 class="text-[32px] md:text-[48px] font-bold text-gray-700">
+                  30
+                </h4>
+                <div class="text-sm text-gray-500">lat doświadczenia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 md:py-36 flex justify-center items-center">
         <div class="flex justify-center items-center w-1/2">
           <h4 class="text-medium md:text-[20px] text-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad illo
