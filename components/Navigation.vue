@@ -1,23 +1,75 @@
 <template>
-  <nav class="h-20 flex items-center justify-center px-10">
-    <Frame class="text-lg flex justify-between">
-      <div class="flex justify-center align-middle text-blue-500">
-        <div class="w-4 pt-0.5">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+  <nav class="flex h-20 justify-center px-4 sm:px-10">
+    <Frame class="flex items-center justify-between">
+      <div
+        class="flex items-center justify-center text-lg text-blue-500 sm:text-[24px]"
+      >
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6 sm:h-8 sm:w-8"
+          >
             <path
-              fill="currentColor"
-              d="M112.1 454.3c0 6.297 1.816 12.44 5.284 17.69l17.14 25.69c5.25 7.875 17.17 14.28 26.64 14.28h61.67c9.438 0 21.36-6.401 26.61-14.28l17.08-25.68c2.938-4.438 5.348-12.37 5.348-17.7L272 415.1h-160L112.1 454.3zM192 0C90.02 .3203 16 82.97 16 175.1c0 44.38 16.44 84.84 43.56 115.8c16.53 18.84 42.34 58.23 52.22 91.45c.0313 .25 .0938 .5166 .125 .7823h160.2c.0313-.2656 .0938-.5166 .125-.7823c9.875-33.22 35.69-72.61 52.22-91.45C351.6 260.8 368 220.4 368 175.1C368 78.8 289.2 .0039 192 0zM288.4 260.1c-15.66 17.85-35.04 46.3-49.05 75.89h-94.61c-14.01-29.59-33.39-58.04-49.04-75.88C75.24 236.8 64 206.1 64 175.1C64 113.3 112.1 48.25 191.1 48C262.6 48 320 105.4 320 175.1C320 206.1 308.8 236.8 288.4 260.1zM176 80C131.9 80 96 115.9 96 160c0 8.844 7.156 16 16 16S128 168.8 128 160c0-26.47 21.53-48 48-48c8.844 0 16-7.148 16-15.99S184.8 80 176 80z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
             />
           </svg>
         </div>
-        <span class="font-bold pl-1">Lampar</span>
+        <span class="pl-1 font-bold">Lampar</span>
       </div>
-      <div class="hidden md:block">
-        <a href="#" class="ml-10 text-gray-800 hover:text-blue-500">Oferta</a>
-        <a href="#" class="ml-10 text-gray-800 hover:text-blue-500"
+      <div class="hidden text-sm uppercase md:block">
+        <a href="#" class="px-2 text-gray-800 hover:text-blue-500">O nas</a>
+        <a href="#" class="px-2 text-gray-800 hover:text-blue-500">Partnerzy</a>
+        <a href="#" class="px-2 text-gray-800 hover:text-blue-500">Oferta</a>
+        <a href="#" class="px-2 text-gray-800 hover:text-blue-500"
           >Realizacje</a
         >
-        <a href="#" class="ml-10 text-gray-800 hover:text-blue-500">Kontakt</a>
+        <a href="#" class="px-2 text-gray-800 hover:text-blue-500">Kontakt</a>
+      </div>
+      <div class="flex flex-col text-sm sm:text-base">
+        <div class="flex items-center">
+          <span class="pr-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-4 w-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+              />
+            </svg>
+          </span>
+          <span>+48 608 521 951</span>
+        </div>
+        <a class="flex items-center" href="mailto:lampar@lampar.com.pl">
+          <span class="pr-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="h-4 w-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+              />
+            </svg>
+          </span>
+          <span>lampar@lampar.com.pl</span>
+        </a>
       </div>
     </Frame>
   </nav>

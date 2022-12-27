@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-md md:max-w-screen-sm w-full"
-  >
+  <div class="w-full md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
     <slot></slot>
   </div>
 </template>
