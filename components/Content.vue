@@ -24,13 +24,14 @@
             <img
               class="max-h-[200px] md:max-h-[500px]"
               src="~/assets/img/undraw_light_the_fire_gt58.svg"
+              alt="baner"
             />
           </div>
         </div>
       </Frame>
     </section>
     <section
-      class="relative flex justify-center px-6 pt-32 pb-10 md:pt-64 md:pb-10 xl:pt-72"
+      class="relative flex justify-center px-6 pt-28 pb-10 md:pt-48 md:pb-10 2xl:pt-60"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -43,13 +44,13 @@
           d="M0,160L60,165.3C120,171,240,181,360,170.7C480,160,600,128,720,144C840,160,960,224,1080,218.7C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
         ></path>
       </svg>
-      <Frame>
-        <div class="">
+      <Frame id="about" class="pt-8">
+        <div>
           <div class="flex items-center justify-center text-gray-600">
             <h4
               class="mb-4 text-center text-[24px] font-bold leading-8 text-gray-600 md:text-left md:text-[28px]"
             >
-              Istniejemy od <span class="text-blue-500">1991 roku</span>
+              Istniejemy od 1991 roku
             </h4>
           </div>
           <div class="flex justify-center">
@@ -83,17 +84,24 @@
         </div>
       </Frame>
     </section>
-    <section class="flex justify-center px-10 pt-12">
+    <section class="flex justify-center px-10 pt-12" id="offer">
       <Frame>
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
           <div class="relative">
-            <h4
-              class="mb-4 px-16 text-center text-[24px] font-bold leading-8 text-gray-600 sm:px-0 md:sticky md:top-6 md:mt-4 md:text-left md:text-[28px]"
-            >
-              Realizujemy szeroki <br class="sm:hidden" />
-              zakres
-              <span class="text-blue-500">usług</span>
-            </h4>
+            <div class="text-center md:sticky md:top-6 md:mt-4 md:text-left">
+              <h4
+                class="px-10 pb-4 text-[24px] font-bold leading-8 text-gray-600 sm:px-0 md:text-[28px]"
+              >
+                Realizujemy szeroki <br class="sm:hidden" />
+                zakres <span class="text-blue-500">usług</span>
+              </h4>
+              <p class="pb-4 text-[15px] text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                sapiente ex hic quia aliquid! Aut maiores similique excepturi
+                fugit sit, mollitia aliquid voluptates illum? At quo commodi
+                corrupti possimus mollitia!
+              </p>
+            </div>
           </div>
           <div class="col-span-2 flex justify-center md:block">
             <div class="max-w-[400px] md:max-w-none">
@@ -339,17 +347,87 @@
         ></path>
       </svg>
     </section>
+    <section
+      class="flex justify-center bg-gray-100 px-8 pb-12 text-center sm:px-10"
+      id="portfolio"
+    >
+      <Frame>
+        <h4
+          class="mb-8 pt-4 text-[24px] font-bold text-gray-600 md:text-[28px]"
+        >
+          Nasze <span class="text-blue-500">realizacje</span>
+        </h4>
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+          <a href="#">
+            <div
+              class="relative h-[200px] rounded-xl bg-[url('/img/pexels-boris-ulzibat-4281932.jpg')] bg-cover bg-center bg-no-repeat"
+            >
+              <div
+                class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
+              >
+                <span
+                  class="absolute bottom-2 left-0 w-full text-center text-white"
+                  >Realizacja nr 1</span
+                >
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div
+              class="relative mt-2 h-[200px] rounded-xl bg-[url('/img/pexels-markus-winkler-5037900.jpg')] bg-cover bg-center bg-no-repeat"
+            >
+              <div
+                class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
+              >
+                <span
+                  class="absolute bottom-2 left-0 w-full text-center text-white"
+                  >Realizacja nr 2</span
+                >
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div
+              class="relative -mt-2 h-[200px] rounded-xl bg-[url('/img/pexels-boris-ulzibat-4281932.jpg')] bg-cover bg-center bg-no-repeat"
+            >
+              <div
+                class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
+              >
+                <span
+                  class="absolute bottom-2 left-0 w-full text-center text-white"
+                  >Realizacja nr 3</span
+                >
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div
+              class="relative h-[200px] rounded-xl bg-[url('/img/pexels-markus-winkler-5037900.jpg')] bg-cover bg-center bg-no-repeat"
+            >
+              <div
+                class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
+              >
+                <span
+                  class="absolute bottom-2 left-0 w-full text-center text-white"
+                  >Realizacja nr 4</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+      </Frame>
+    </section>
     <section class="flex justify-center bg-gray-100 px-10 pb-12 text-center">
       <Frame>
-        <h4 class="mb-8 text-[24px] font-bold text-gray-600 md:text-[28px]">
-          Jak <span class="text-blue-500">pracujemy?</span>
+        <h4 class="text-[24px] font-bold text-gray-600 md:text-[28px]">
+          Jak pracujemy?
         </h4>
         <div class="flex justify-center">
           <div class="grid grid-cols-3 gap-4">
             <div
-              class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
+              class="relative my-3 flex items-center justify-center p-2 sm:p-5"
             >
-              <div class="text-center text-white">
+              <div class="text-center text-gray-500">
                 <div class="mb-2 flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -368,11 +446,29 @@
                 </div>
                 <div class="text-sm sm:text-base">Analizujemy potrzeby</div>
               </div>
+              <div
+                class="absolute -right-5 top-[20%] rotate-[8deg] text-blue-500 sm:top-[30%]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
             </div>
             <div
-              class="mt-4 mb-2 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
+              class="relative mt-4 mb-2 flex items-center justify-center p-2 sm:p-5"
             >
-              <div class="text-center text-white">
+              <div class="text-center text-gray-500">
                 <div class="mb-2 flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -391,11 +487,27 @@
                 </div>
                 <div class="text-sm sm:text-base">Tworzymy kosztorys</div>
               </div>
+              <div
+                class="absolute -right-5 top-[17%] -rotate-[8deg] text-blue-500 sm:top-[28%]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
             </div>
-            <div
-              class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
-            >
-              <div class="text-center text-white">
+            <div class="my-3 flex items-center justify-center p-2 sm:p-5">
+              <div class="text-center text-gray-500">
                 <div class="mb-2 flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -419,9 +531,84 @@
         </div>
       </Frame>
     </section>
+    <section class="flex justify-center bg-gray-100 px-10 pb-10" id="contact">
+      <Frame wide class="rounded-xl p-5 text-gray-700">
+        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-12">
+          <div class="mb-20 md:mb-0">
+            <div class="text-center md:text-left">
+              <h4
+                class="text-[24px] font-bold leading-tight text-gray-600 md:text-[28px]"
+              >
+                Kontakt
+              </h4>
+              <p class="pb-6 text-sm text-gray-500 sm:text-base">
+                Z chęcią odpowiemy na Twoje pytania
+              </p>
+            </div>
+
+            <div class="mb-2">
+              <label for="name" class="text-left text-sm text-gray-500"
+                >Imię i nazwisko</label
+              >
+              <div>
+                <input
+                  class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+              </div>
+            </div>
+
+            <div class="mb-2">
+              <label for="email" class="text-left text-sm text-gray-500"
+                >Adres email</label
+              >
+              <div>
+                <input
+                  class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+            </div>
+
+            <div class="mb-2">
+              <label for="message" class="text-left text-sm text-gray-500"
+                >Treść wiadomości</label
+              >
+              <div>
+                <textarea
+                  class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
+                  type="text"
+                  name="message"
+                  id="message"
+                  rows="6"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="text-center md:text-left">
+              <button
+                class="rounded bg-gray-600 py-2 px-4 font-bold text-white focus:bg-gray-800 focus:outline-none"
+              >
+                Wyślij
+              </button>
+            </div>
+          </div>
+          <div class="col-span-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.714378339727!2d21.097547716078935!3d52.1213254734496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47192c5260352ee7%3A0xc024d035d44e6462!2sLampar.%20Dealer%20Philips!5e0!3m2!1spl!2spl!4v1672233510487!5m2!1spl!2spl"
+              width="100%"
+              height="100%"
+              class="min-h-[200px] rounded-xl border grayscale sm:min-h-[500px]"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </Frame>
+    </section>
   </main>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>

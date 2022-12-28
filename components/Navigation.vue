@@ -2,7 +2,7 @@
   <nav class="flex h-20 justify-center px-4 sm:px-10">
     <Frame class="flex items-center justify-between">
       <div
-        class="flex items-center justify-center text-lg text-blue-500 sm:text-[24px]"
+        class="flex items-center justify-center text-[20px] text-blue-500 sm:text-[24px]"
       >
         <div>
           <svg
@@ -22,23 +22,40 @@
         </div>
         <span class="pl-1 font-bold">Lampar</span>
       </div>
-      <div class="hidden text-sm uppercase md:block">
-        <a href="#" class="px-2 text-gray-800 hover:text-blue-500">O nas</a>
-        <a href="#" class="px-2 text-gray-800 hover:text-blue-500">Partnerzy</a>
-        <a href="#" class="px-2 text-gray-800 hover:text-blue-500">Oferta</a>
-        <a href="#" class="px-2 text-gray-800 hover:text-blue-500"
-          >Realizacje</a
+      <div class="hidden md:block">
+        <button
+          class="px-2 text-gray-800 hover:text-blue-500"
+          @click.prevent="smoothScrollTo('#about')"
         >
-        <a href="#" class="px-2 text-gray-800 hover:text-blue-500">Kontakt</a>
+          O nas
+        </button>
+        <button
+          class="px-2 text-gray-800 hover:text-blue-500"
+          @click.prevent="smoothScrollTo('#offer')"
+        >
+          Oferta
+        </button>
+        <button
+          class="px-2 text-gray-800 hover:text-blue-500"
+          @click.prevent="smoothScrollTo('#portfolio')"
+        >
+          Realizacje
+        </button>
+        <button
+          class="px-2 text-gray-800 hover:text-blue-500"
+          @click.prevent="smoothScrollTo('#contact')"
+        >
+          Kontakt
+        </button>
       </div>
       <div class="flex flex-col text-sm sm:text-base">
         <div class="flex items-center">
           <span class="pr-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
+              fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              stroke-width="1.2"
               stroke="currentColor"
               class="h-4 w-4"
             >
@@ -57,7 +74,7 @@
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              stroke-width="1.2"
               stroke="currentColor"
               class="h-4 w-4"
             >
@@ -75,6 +92,16 @@
   </nav>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const smoothScrollTo = (id: string) => {
+  const target = document.querySelector(id) as HTMLElement;
+  const targetOffsetTop = target?.getBoundingClientRect().top;
+
+  window.scrollTo({
+    top: targetOffsetTop,
+    behavior: "smooth",
+  });
+};
+</script>
 
 <style scoped></style>
