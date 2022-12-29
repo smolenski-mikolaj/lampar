@@ -1,18 +1,20 @@
 <template>
   <main>
-    <section class="flex justify-center bg-gray-100 px-10">
+    <section class="relative flex justify-center bg-gray-100 px-10">
       <Frame>
-        <div class="grid grid-cols-1 gap-4 pt-12 md:grid-cols-3">
+        <div
+          class="-mb-10 grid grid-cols-1 gap-4 pt-6 md:grid-cols-3 md:gap-20 md:pt-12"
+        >
           <div
             class="order-2 flex flex-col justify-center text-center md:order-1 md:text-left"
           >
             <h1
-              class="mt-2 text-[28px] font-extrabold leading-8 md:mt-0 md:text-[40px] md:leading-10"
+              class="mt-2 text-[28px] font-extrabold leading-8 md:mt-0 md:text-[36px] md:leading-10"
             >
               <span class="text-blue-500">Profesjonalnie</span> <br />
               <span class="text-gray-700">oświetlimy Twoje wnętrze</span>
             </h1>
-            <h2 class="mt-4 text-[15px] text-gray-500">
+            <h2 class="mt-4 pb-16 text-[15px] text-gray-500">
               Oferujemy wykonanie wszelkich prac elektroinstalacyjnych.
               Sprawdzone przez nas firmy uczciwie i terminowo wykonują
               powierzoną im pracę.
@@ -22,8 +24,8 @@
             class="pointer-events-none order-1 flex flex-col items-center justify-center md:order-2 md:col-span-2"
           >
             <img
-              class="max-h-[200px] md:max-h-[500px]"
-              src="~/assets/img/undraw_light_the_fire_gt58.svg"
+              class="max-h-[200px] md:my-10 md:max-h-[400px]"
+              src="~/assets/img/lamps.svg"
               alt="baner"
             />
           </div>
@@ -31,24 +33,13 @@
       </Frame>
     </section>
     <section
-      class="relative flex justify-center px-6 pt-28 pb-10 md:pt-48 md:pb-10 2xl:pt-60"
+      class="relative flex justify-center px-6 pt-16 pb-10 md:pb-10 md:pt-32 2xl:pt-40"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        class="absolute -top-0 -z-10"
-      >
-        <path
-          fill="#f3f4f6"
-          fill-opacity="1"
-          d="M0,160L60,165.3C120,171,240,181,360,170.7C480,160,600,128,720,144C840,160,960,224,1080,218.7C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-        ></path>
-      </svg>
-      <Frame id="about" class="pt-8">
+      <Frame id="about" class="pt-6">
         <div>
           <div class="flex items-center justify-center text-gray-600">
             <h4
-              class="mb-4 text-center text-[24px] font-bold leading-8 text-gray-600 md:text-left md:text-[28px]"
+              class="mb-2 text-center text-[24px] font-bold leading-8 text-gray-600 md:text-left md:text-[28px]"
             >
               Istniejemy od 1991 roku
             </h4>
@@ -83,17 +74,38 @@
           </div>
         </div>
       </Frame>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="absolute top-0 -z-10"
+      >
+        <path
+          fill="#f3f4f6"
+          fill-opacity="1"
+          d="M0,64L48,64C96,64,192,64,288,74.7C384,85,480,107,576,106.7C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <img
+        class="pointer-events-none absolute left-[25%] top-[14%] -z-10 h-12 rotate-12 md:left-[10%] md:top-[20%] md:h-32"
+        src="~/assets/img/icons/bulb1.svg"
+        alt="żarówka dekoracyjna"
+      />
+      <img
+        class="pointer-events-none absolute right-[30%] top-[92%] -z-10 h-12 -rotate-12 md:right-[15%] md:top-[70%] md:h-32"
+        src="~/assets/img/icons/bulb2.svg"
+        alt="żarówka dekoracyjna"
+      />
     </section>
-    <section class="flex justify-center px-10 pt-12" id="offer">
+    <section class="relative flex justify-center px-10 pt-12" id="offer">
       <Frame>
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
           <div class="relative">
             <div class="text-center md:sticky md:top-6 md:mt-4 md:text-left">
               <h4
-                class="px-10 pb-4 text-[24px] font-bold leading-8 text-gray-600 sm:px-0 md:text-[28px]"
+                class="px-4 pb-4 text-[24px] font-bold leading-6 text-gray-600 sm:px-0 md:text-[28px] md:leading-8"
               >
-                Realizujemy szeroki <br class="sm:hidden" />
-                zakres <span class="text-blue-500">usług</span>
+                Realizujemy szeroki zakres
+                <span class="text-blue-500">usług</span>
               </h4>
               <p class="pb-4 text-[15px] text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
@@ -129,9 +141,14 @@
           </div>
         </div>
       </Frame>
+      <img
+        class="pointer-events-none absolute left-[5%] top-[105%] -z-10 h-12 -rotate-6 md:left-[5%] md:top-[60%] md:h-32"
+        src="~/assets/img/icons/bulb3.svg"
+        alt="żarówka dekoracyjna"
+      />
     </section>
     <section
-      class="relative flex justify-center px-10 pt-16 pb-32 text-gray-600 md:pb-48 2xl:pb-72"
+      class="relative flex justify-center px-10 pt-16 pb-24 text-gray-600 md:pb-40 2xl:pb-64"
     >
       <Frame class="flex flex-col items-center">
         <div>
@@ -343,9 +360,14 @@
         <path
           fill="#f3f4f6"
           fill-opacity="1"
-          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          d="M0,256L48,245.3C96,235,192,213,288,208C384,203,480,213,576,224C672,235,768,245,864,256C960,267,1056,277,1152,272C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
+      <img
+        class="pointer-events-none absolute top-[60%] right-[10%] -z-10 h-12 rotate-6 md:right-[5%] md:top-[40%] md:h-32"
+        src="~/assets/img/icons/bulb4.svg"
+        alt="żarówka dekoracyjna"
+      />
     </section>
     <section
       class="flex justify-center bg-gray-100 px-8 pb-12 text-center sm:px-10"
@@ -417,7 +439,7 @@
         </div>
       </Frame>
     </section>
-    <section class="flex justify-center bg-gray-100 px-10 pb-12 text-center">
+    <section class="flex justify-center bg-gray-100 py-12 pt-12 text-center">
       <Frame>
         <h4 class="text-[24px] font-bold text-gray-600 md:text-[28px]">
           Jak pracujemy?
