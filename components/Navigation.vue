@@ -1,6 +1,6 @@
 <template>
   <nav class="flex h-20 justify-center px-4 sm:px-10">
-    <Frame class="flex items-center justify-between">
+    <Frame wide class="flex items-center justify-between">
       <div
         class="flex items-center justify-center text-[20px] text-blue-500 sm:text-[24px]"
       >
