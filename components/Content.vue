@@ -9,12 +9,16 @@
             class="order-2 flex flex-col justify-center text-center md:order-1 md:text-left"
           >
             <h1
+              v-animate-on-scroll
               class="mt-2 text-[28px] font-extrabold leading-8 md:mt-0 md:text-[36px] md:leading-10"
             >
               <span class="text-blue-500">Profesjonalnie</span> <br />
               <span class="text-gray-700">oświetlimy Twoje wnętrze</span>
             </h1>
-            <h2 class="mt-4 pb-16 text-[15px] text-gray-500">
+            <h2
+              v-animate-on-scroll
+              class="mt-4 pb-16 text-[15px] text-gray-500"
+            >
               Oferujemy wykonanie wszelkich prac elektroinstalacyjnych.
               Sprawdzone przez nas firmy uczciwie i terminowo wykonują
               powierzoną im pracę.
@@ -24,6 +28,7 @@
             class="pointer-events-none order-1 flex flex-col items-center justify-center md:order-2 md:col-span-2"
           >
             <img
+              v-animate-on-scroll
               class="max-h-[200px] md:my-10 md:max-h-[400px]"
               src="~/assets/img/lamps.svg"
               alt="baner"
@@ -39,6 +44,7 @@
         <div>
           <div class="flex items-center justify-center text-gray-600">
             <h4
+              v-animate-on-scroll
               class="mb-2 text-center text-[24px] font-bold leading-8 text-gray-600 md:text-left md:text-[28px]"
             >
               Istniejemy od 1991 roku
@@ -47,6 +53,7 @@
           <div class="flex justify-center">
             <div class="grid grid-cols-3 gap-2">
               <div
+                v-animate-on-scroll
                 class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
               >
                 <div class="text-center leading-6 text-white">
@@ -55,6 +62,7 @@
                 </div>
               </div>
               <div
+                v-animate-on-scroll
                 class="mb-1 mt-4 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
               >
                 <div class="text-center leading-6 text-white">
@@ -63,6 +71,7 @@
                 </div>
               </div>
               <div
+                v-animate-on-scroll
                 class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
               >
                 <div class="text-center leading-6 text-white">
@@ -102,12 +111,13 @@
           <div class="relative">
             <div class="text-center md:sticky md:top-6 md:mt-4 md:text-left">
               <h4
+                v-animate-on-scroll
                 class="px-4 pb-4 text-[24px] font-bold leading-6 text-gray-600 sm:px-0 md:text-[28px] md:leading-8"
               >
                 Realizujemy szeroki zakres
                 <span class="text-blue-500">usług</span>
               </h4>
-              <p class="pb-4 text-[15px] text-gray-500">
+              <p v-animate-on-scroll class="pb-4 text-[15px] text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
                 sapiente ex hic quia aliquid! Aut maiores similique excepturi
                 fugit sit, mollitia aliquid voluptates illum? At quo commodi
@@ -117,23 +127,25 @@
           </div>
           <div class="col-span-2 flex justify-center md:block">
             <div class="max-w-[400px] md:max-w-none">
-              <ListItem
+              <ListItem v-animate-on-scroll
                 >systemy oświetlenia wewnętrznego i zewnętrznego</ListItem
               >
-              <ListItem>systemy oświetlenia awaryjnego</ListItem>
-              <ListItem>źródła światła</ListItem>
-              <ListItem>projekty oświetlenia</ListItem>
-              <ListItem
+              <ListItem v-animate-on-scroll
+                >systemy oświetlenia awaryjnego</ListItem
+              >
+              <ListItem v-animate-on-scroll>źródła światła</ListItem>
+              <ListItem v-animate-on-scroll>projekty oświetlenia</ListItem>
+              <ListItem v-animate-on-scroll
                 >osprzęt elektroinstalacyjny renomowanych producentów krajowych
                 i zagranicznych</ListItem
               >
-              <ListItem>kable i przewody</ListItem>
-              <ListItem>listwy i koryta kablowe</ListItem>
-              <ListItem
+              <ListItem v-animate-on-scroll>kable i przewody</ListItem>
+              <ListItem v-animate-on-scroll>listwy i koryta kablowe</ListItem>
+              <ListItem v-animate-on-scroll
                 >rozdzielnie nn, wyłączniki nadmiarowo-prądowe i
                 różnicowo-prądowe</ListItem
               >
-              <ListItem
+              <ListItem v-animate-on-scroll
                 >gniazda i przewody do instalacji komputerowych i
                 telewizyjnych</ListItem
               >
@@ -152,11 +164,17 @@
     >
       <Frame class="flex flex-col items-center">
         <div>
-          <h4 class="mb-4 text-[24px] font-bold md:text-[28px]">
+          <h4
+            v-animate-on-scroll
+            class="mb-4 text-[24px] font-bold md:text-[28px]"
+          >
             Nasi partnerzy
           </h4>
         </div>
-        <div class="flex flex-col justify-center text-gray-400 sm:flex-row">
+        <div
+          v-animate-on-scroll
+          class="flex flex-col justify-center text-gray-400 sm:flex-row"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             id="svg2759"
@@ -375,11 +393,12 @@
     >
       <Frame>
         <h4
+          v-animate-on-scroll
           class="mb-8 pt-4 text-[24px] font-bold text-gray-600 md:text-[28px]"
         >
           Nasze <span class="text-blue-500">realizacje</span>
         </h4>
-        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div v-animate-on-scroll class="grid grid-cols-2 gap-4 sm:grid-cols-4">
           <a href="#">
             <div
               class="relative h-[200px] rounded-xl bg-[url('/img/pexels-boris-ulzibat-4281932.jpg')] bg-cover bg-center bg-no-repeat"
@@ -441,11 +460,14 @@
     </section>
     <section class="flex justify-center bg-gray-100 py-12 pt-12 text-center">
       <Frame>
-        <h4 class="text-[24px] font-bold text-gray-600 md:text-[28px]">
+        <h4
+          v-animate-on-scroll
+          class="text-[24px] font-bold text-gray-600 md:text-[28px]"
+        >
           Jak pracujemy?
         </h4>
         <div class="flex justify-center">
-          <div class="grid grid-cols-3 gap-4">
+          <div v-animate-on-scroll class="grid grid-cols-3 gap-4">
             <div
               class="relative my-3 flex items-center justify-center p-2 sm:p-5"
             >
@@ -634,3 +656,5 @@
     </section>
   </main>
 </template>
+
+<script setup lang="ts"></script>
