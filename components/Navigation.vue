@@ -1,6 +1,6 @@
 <template>
   <nav class="flex h-20 justify-center px-4 sm:px-10">
-    <Frame wide class="flex items-center justify-between">
+    <Frame class="flex items-center justify-between">
       <div
         class="flex items-center justify-center text-[20px] text-blue-500 sm:text-[24px]"
       >
@@ -24,25 +24,25 @@
       </div>
       <div class="hidden md:block">
         <button
-          class="px-2 text-gray-800 hover:text-blue-500"
+          class="px-2 uppercase text-gray-800 hover:text-blue-500"
           @click.prevent="smoothScrollTo('#about')"
         >
           O nas
         </button>
         <button
-          class="px-2 text-gray-800 hover:text-blue-500"
+          class="px-2 uppercase text-gray-800 hover:text-blue-500"
           @click.prevent="smoothScrollTo('#offer')"
         >
           Oferta
         </button>
         <button
-          class="px-2 text-gray-800 hover:text-blue-500"
+          class="px-2 uppercase text-gray-800 hover:text-blue-500"
           @click.prevent="smoothScrollTo('#portfolio')"
         >
           Realizacje
         </button>
         <button
-          class="px-2 text-gray-800 hover:text-blue-500"
+          class="px-2 uppercase text-gray-800 hover:text-blue-500"
           @click.prevent="smoothScrollTo('#contact')"
         >
           Kontakt

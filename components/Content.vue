@@ -3,29 +3,25 @@
     <section class="relative flex justify-center bg-gray-100 px-10">
       <Frame>
         <div
-          class="-mb-10 grid grid-cols-1 gap-4 pt-6 md:grid-cols-3 md:gap-20 md:pt-12"
+          class="-mb-10 grid grid-cols-1 gap-4 pt-6 md:grid-cols-5 md:gap-20 md:pt-12"
         >
           <div
-            class="order-2 flex flex-col justify-center text-center md:order-1 md:text-left"
+            class="order-2 flex flex-col justify-center text-center md:order-1 md:col-span-2 md:text-left"
           >
             <h1
               v-animate-on-scroll
               class="mt-2 text-[28px] font-extrabold leading-8 md:mt-0 md:text-[36px] md:leading-10"
             >
-              <span class="text-blue-500">Profesjonalnie</span> <br />
-              <span class="text-gray-700">oświetlimy Twoje wnętrze</span>
+              <span class="text-blue-500">Oświetlimy</span> <br />
+              <span class="text-gray-800">każdy obiekt</span>
             </h1>
-            <h2
-              v-animate-on-scroll
-              class="mt-4 pb-16 text-[15px] text-gray-500"
-            >
-              Oferujemy wykonanie wszelkich prac elektroinstalacyjnych.
-              Sprawdzone przez nas firmy uczciwie i terminowo wykonują
-              powierzoną im pracę.
+            <h2 v-animate-on-scroll class="mt-4 pb-16 text-gray-600">
+              Jesteśmy dystrybutorem oświetlenia profesjonalnego, dekoracyjnego
+              i awaryjnego z wieloletnim doświadczeniem na rynku polskim.
             </h2>
           </div>
           <div
-            class="pointer-events-none order-1 flex flex-col items-center justify-center md:order-2 md:col-span-2"
+            class="pointer-events-none order-1 flex flex-col items-center justify-center md:order-2 md:col-span-3"
           >
             <img
               v-animate-on-scroll
@@ -42,13 +38,20 @@
     >
       <Frame id="about" class="pt-6">
         <div>
-          <div class="flex items-center justify-center text-gray-600">
+          <div class="text-center text-gray-800">
             <h4
               v-animate-on-scroll
-              class="mb-2 text-center text-[24px] font-bold leading-8 text-gray-600 md:text-left md:text-[28px]"
+              class="mb-2 text-[24px] font-bold leading-8 text-gray-800 md:text-[28px]"
             >
-              Istniejemy od 1991 roku
+              Kompleksowo realizujemy inwestycje
             </h4>
+            <p
+              v-animate-on-scroll
+              class="px-4 pb-4 text-center text-gray-600 md:px-24 xl:px-48"
+            >
+              Oświetlamy obiekty użyteczności publicznej - biura, szkoły, centra
+              handlowe, przychodnie, gabinety, restauracje, sklepy.
+            </p>
           </div>
           <div class="flex justify-center">
             <div class="grid grid-cols-3 gap-2">
@@ -57,7 +60,24 @@
                 class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
               >
                 <div class="text-center leading-6 text-white">
-                  <h4 class="text-[24px] font-bold sm:text-[32px]">400+</h4>
+                  <h4 class="text-[24px] font-bold sm:text-[32px]">
+                    400<span class="inline-block">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-4 w-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 4.5v15m7.5-7.5h-15"
+                        />
+                      </svg>
+                    </span>
+                  </h4>
                   <div class="text-sm sm:text-base">realizacji</div>
                 </div>
               </div>
@@ -66,7 +86,24 @@
                 class="mb-1 mt-4 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
               >
                 <div class="text-center leading-6 text-white">
-                  <h4 class="text-[24px] font-bold sm:text-[32px]">20+</h4>
+                  <h4 class="text-[24px] font-bold sm:text-[32px]">
+                    20<span class="inline-block">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-4 w-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 4.5v15m7.5-7.5h-15"
+                        />
+                      </svg>
+                    </span>
+                  </h4>
                   <div class="text-sm sm:text-base">partnerów</div>
                 </div>
               </div>
@@ -75,7 +112,24 @@
                 class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
               >
                 <div class="text-center leading-6 text-white">
-                  <h4 class="text-[24px] font-bold sm:text-[32px]">30+</h4>
+                  <h4 class="text-[24px] font-bold sm:text-[32px]">
+                    30<span class="inline-block">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-4 w-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 4.5v15m7.5-7.5h-15"
+                        />
+                      </svg>
+                    </span>
+                  </h4>
                   <div class="text-sm sm:text-base">lat w branży</div>
                 </div>
               </div>
@@ -109,19 +163,23 @@
       <Frame>
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
           <div class="relative">
-            <div class="text-center md:sticky md:top-6 md:mt-4 md:text-left">
+            <div class="md:sticky md:top-6 md:mt-4">
               <h4
                 v-animate-on-scroll
-                class="px-4 pb-4 text-[24px] font-bold leading-6 text-gray-600 sm:px-0 md:text-[28px] md:leading-8"
+                class="px-4 pb-4 text-center text-[24px] font-bold leading-6 text-gray-800 sm:px-0 md:text-left md:text-[28px] md:leading-8"
               >
                 Realizujemy szeroki zakres
                 <span class="text-blue-500">usług</span>
               </h4>
-              <p v-animate-on-scroll class="pb-4 text-[15px] text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                sapiente ex hic quia aliquid! Aut maiores similique excepturi
-                fugit sit, mollitia aliquid voluptates illum? At quo commodi
-                corrupti possimus mollitia!
+              <p
+                v-animate-on-scroll
+                class="pb-4 text-center text-gray-600 md:text-left"
+              >
+                Nasza działalność obejmuje współpracę ze sklepami
+                oświetleniowymi i dekoracyjnymi w zakresie sprzedaży oświetlenia
+                znanych i cenionych marek europejskich, współpracę z biurami
+                projektowymi i projektantami oraz kompleksową obsługę zamówień
+                inwestycyjnych w zakresie oświetlenia dekoracyjnego.
               </p>
             </div>
           </div>
@@ -160,7 +218,7 @@
       />
     </section>
     <section
-      class="relative flex justify-center px-10 pt-16 pb-24 text-gray-600 md:pb-40 2xl:pb-64"
+      class="relative flex justify-center px-10 pt-16 pb-24 text-gray-800 md:pb-40 2xl:pb-64"
     >
       <Frame class="flex flex-col items-center">
         <div>
@@ -368,6 +426,16 @@
               "
             />
           </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 144.57 26.93"
+            class="mx-5 my-2 h-5"
+          >
+            <path
+              fill="#888689"
+              d="M13.78,9.48a6.53,6.53,0,0,1,.33,2.12V22.42H10.19V12.69A4.94,4.94,0,0,0,10,11.2a1.81,1.81,0,0,0-.57-1.07,2.12,2.12,0,0,0-1.06-.52,5.7,5.7,0,0,0-1.26-.07,4.22,4.22,0,0,0-1.25.31,3.38,3.38,0,0,0-1.17.9,4.19,4.19,0,0,0-.81,2.39v9.27H0V0H3.93V7.82l.26-.25A5.24,5.24,0,0,1,6.57,6.24,6.32,6.32,0,0,1,8.69,6a9,9,0,0,1,.94.12,6.52,6.52,0,0,1,2.4,1,4.76,4.76,0,0,1,1.31,1.38A4.69,4.69,0,0,1,13.6,9,2.84,2.84,0,0,1,13.78,9.48Zm54.87-3A6,6,0,0,0,67,7.35,4.72,4.72,0,0,0,65.75,8.8V6.34H61.89V22.43h3.85v-9A2.83,2.83,0,0,1,66.94,11a4.33,4.33,0,0,1,2.1-.89,6.5,6.5,0,0,1,2.2.1v-4A7.12,7.12,0,0,0,68.66,6.46ZM49.41,15.25a5,5,0,0,0,1.16,3.14,4.09,4.09,0,0,0,4.65.94,3.45,3.45,0,0,0,1.92-2.63H61.2v.14a6.74,6.74,0,0,1-1.67,3.48,7.57,7.57,0,0,1-4.4,2.35,9.9,9.9,0,0,1-4-.18A7.91,7.91,0,0,1,48,20.75a7.8,7.8,0,0,1-1.74-2.6,9.78,9.78,0,0,1-.64-4,9.68,9.68,0,0,1,.89-4.32,7.09,7.09,0,0,1,3.62-3.38A8.29,8.29,0,0,1,55.32,6a7.14,7.14,0,0,1,4.83,3.53,10.46,10.46,0,0,1,1,5.7H49.41Zm.19-3h7.62a3.42,3.42,0,0,0-1.79-2.93,3.91,3.91,0,0,0-3.83-.15A3.73,3.73,0,0,0,49.61,12.24Zm-20.36,7.9a4.47,4.47,0,0,0,.88,2.29h-4.7V21a6.24,6.24,0,0,1-2.54,1.41,7.55,7.55,0,0,1-2.85.25,6.56,6.56,0,0,1-3.43-1.26,4.5,4.5,0,0,1-1.79-2.9,4.65,4.65,0,0,1,.41-2.88,5,5,0,0,1,2.35-2.09,21.4,21.4,0,0,1,3.56-.89l3.46-.7a1,1,0,0,0,.68-.36,1.74,1.74,0,0,0,.15-.93,1.35,1.35,0,0,0-.75-1.26,4.37,4.37,0,0,0-2.06-.44,4.17,4.17,0,0,0-2.91.82,2.81,2.81,0,0,0-.48,1.75H15.47a6.53,6.53,0,0,1,.79-3.18A5.17,5.17,0,0,1,19.45,6.2a16.9,16.9,0,0,1,2.94-.32,12.44,12.44,0,0,1,2.93.32,7.19,7.19,0,0,1,2.43,1l.15.12a3.46,3.46,0,0,1,1.36,3Zm-3.82-3.79V14.47a13.7,13.7,0,0,1-1.73.39,25.67,25.67,0,0,0-2.92.67,5.67,5.67,0,0,0-1.25.55,1.74,1.74,0,0,0-.83,1.57,2.06,2.06,0,0,0,1.47,1.87A4.89,4.89,0,0,0,24,19,3,3,0,0,0,25.44,16.35Zm15.87-10H45V22a4,4,0,0,1-.8,2.59,5.75,5.75,0,0,1-3.76,2.12s-5.35.9-8.11-.86a4.22,4.22,0,0,1-2-3.23v-.18h4.11c.12.94.75,2,3.95,1.84s2.92-2.21,2.92-2.21V20a7.08,7.08,0,0,1-4.59,1.62,6.7,6.7,0,0,1-5.66-3,8.66,8.66,0,0,1-1.14-6.39,6.8,6.8,0,0,1,2.79-4.69,7.14,7.14,0,0,1,4.4-1.29,6.36,6.36,0,0,1,4.2,1.7Zm0,7.19A7.08,7.08,0,0,0,41,11.74a3.37,3.37,0,0,0-1-1.44,4.11,4.11,0,0,0-4.37-.52c-.25.12-2,.86-2.15,3.7a4.93,4.93,0,0,0,1.53,4.13,4,4,0,0,0,4.9-.07c1.25-1,1.36-2.28,1.36-3.75Zm49.32-3.43h-.06V6.34H88.77V22.43h2V13.86a5.54,5.54,0,0,1,6-5.77v-2A5.91,5.91,0,0,0,90.64,10.12ZM112,14.27c0,4.61-2.71,8.51-7.6,8.51s-7.6-3.9-7.6-8.51,2.71-8.51,7.6-8.51S112,9.66,112,14.27Zm-2,0c0-3.4-1.9-6.86-5.64-6.86s-5.64,3.46-5.64,6.86,1.9,6.85,5.64,6.85S110,17.67,110,14.27Zm15.28.4c0,3.27-1.46,6.45-4.83,6.45-3.12,0-4.21-1.52-4.3-4.42V6.34h-2V16.67c0,3.77,1.56,6.11,5.64,6.11a6,6,0,0,0,5.55-3.37h.06v3h1.8V6.34h-2Zm19.26-.4c0,4.58-2.34,8.51-7.23,8.51a5.72,5.72,0,0,1-5.58-3.52h-.06v7.62h-2V6.34h1.81V9.29h.06a6,6,0,0,1,5.74-3.52C142.23,5.76,144.57,9.69,144.57,14.27Zm-2,0c0-3.33-1.53-6.86-5.27-6.86-4.36,0-5.64,3.21-5.64,6.86,0,3.33,1.5,6.85,5.64,6.85C141.08,21.13,142.61,17.61,142.61,14.27ZM84.31,6.34h2V21.21a6.69,6.69,0,0,1-.3,2.1c-.8,2.41-3.2,3.61-6.43,3.61h-.41c-3.21,0-6.42-1.35-6.67-4.48h2c.41,2.18,2.56,2.84,4.71,2.84h.58a6.64,6.64,0,0,0,3.05-.77,3,3,0,0,0,1.42-2.23,16.73,16.73,0,0,0,.11-2V18.38h-.06a5.43,5.43,0,0,1-5.11,3c-5.14,0-7.26-3.36-7.26-7.61,0-4.08,2.62-7.47,7.26-7.47a5.67,5.67,0,0,1,5.11,3h.06Zm0,7.67c0-2.9-1.43-6.15-5.17-6.15s-5.3,3.07-5.3,6.15,1.65,5.89,5.3,5.89C82.53,19.9,84.31,17,84.31,14Z"
+            />
+          </svg>
         </div>
       </Frame>
       <svg
@@ -394,67 +462,62 @@
       <Frame>
         <h4
           v-animate-on-scroll
-          class="mb-8 pt-4 text-[24px] font-bold text-gray-600 md:text-[28px]"
+          class="mb-8 pt-4 text-[24px] font-bold text-gray-800 md:text-[28px]"
         >
           Nasze <span class="text-blue-500">realizacje</span>
         </h4>
         <div v-animate-on-scroll class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <a href="#">
+          <div
+            class="relative h-[200px] rounded-xl bg-[url('/img/pexels-boris-ulzibat-4281932.jpg')] bg-cover bg-center bg-no-repeat"
+          >
             <div
-              class="relative h-[200px] rounded-xl bg-[url('/img/pexels-boris-ulzibat-4281932.jpg')] bg-cover bg-center bg-no-repeat"
+              class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
             >
-              <div
-                class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
+              <span
+                class="absolute bottom-2 left-0 w-full text-center text-white"
+                >Realizacja nr 1</span
               >
-                <span
-                  class="absolute bottom-2 left-0 w-full text-center text-white"
-                  >Realizacja nr 1</span
-                >
-              </div>
             </div>
-          </a>
-          <a href="#">
+          </div>
+
+          <div
+            class="relative mt-2 h-[200px] rounded-xl bg-[url('/img/pexels-markus-winkler-5037900.jpg')] bg-cover bg-center bg-no-repeat"
+          >
             <div
-              class="relative mt-2 h-[200px] rounded-xl bg-[url('/img/pexels-markus-winkler-5037900.jpg')] bg-cover bg-center bg-no-repeat"
+              class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
             >
-              <div
-                class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
+              <span
+                class="absolute bottom-2 left-0 w-full text-center text-white"
+                >Realizacja nr 2</span
               >
-                <span
-                  class="absolute bottom-2 left-0 w-full text-center text-white"
-                  >Realizacja nr 2</span
-                >
-              </div>
             </div>
-          </a>
-          <a href="#">
+          </div>
+
+          <div
+            class="relative -mt-2 h-[200px] rounded-xl bg-[url('/img/pexels-boris-ulzibat-4281932.jpg')] bg-cover bg-center bg-no-repeat"
+          >
             <div
-              class="relative -mt-2 h-[200px] rounded-xl bg-[url('/img/pexels-boris-ulzibat-4281932.jpg')] bg-cover bg-center bg-no-repeat"
+              class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
             >
-              <div
-                class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
+              <span
+                class="absolute bottom-2 left-0 w-full text-center text-white"
+                >Realizacja nr 3</span
               >
-                <span
-                  class="absolute bottom-2 left-0 w-full text-center text-white"
-                  >Realizacja nr 3</span
-                >
-              </div>
             </div>
-          </a>
-          <a href="#">
+          </div>
+
+          <div
+            class="relative h-[200px] rounded-xl bg-[url('/img/pexels-markus-winkler-5037900.jpg')] bg-cover bg-center bg-no-repeat"
+          >
             <div
-              class="relative h-[200px] rounded-xl bg-[url('/img/pexels-markus-winkler-5037900.jpg')] bg-cover bg-center bg-no-repeat"
+              class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
             >
-              <div
-                class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
+              <span
+                class="absolute bottom-2 left-0 w-full text-center text-white"
+                >Realizacja nr 4</span
               >
-                <span
-                  class="absolute bottom-2 left-0 w-full text-center text-white"
-                  >Realizacja nr 4</span
-                >
-              </div>
             </div>
-          </a>
+          </div>
         </div>
       </Frame>
     </section>
@@ -462,7 +525,7 @@
       <Frame>
         <h4
           v-animate-on-scroll
-          class="text-[24px] font-bold text-gray-600 md:text-[28px]"
+          class="text-[24px] font-bold text-gray-800 md:text-[28px]"
         >
           Jak pracujemy?
         </h4>
@@ -471,7 +534,7 @@
             <div
               class="relative my-3 flex items-center justify-center p-2 sm:p-5"
             >
-              <div class="text-center text-gray-500">
+              <div class="text-center text-gray-600">
                 <div class="mb-2 flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -512,7 +575,7 @@
             <div
               class="relative mt-4 mb-2 flex items-center justify-center p-2 sm:p-5"
             >
-              <div class="text-center text-gray-500">
+              <div class="text-center text-gray-600">
                 <div class="mb-2 flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -551,7 +614,7 @@
               </div>
             </div>
             <div class="my-3 flex items-center justify-center p-2 sm:p-5">
-              <div class="text-center text-gray-500">
+              <div class="text-center text-gray-600">
                 <div class="mb-2 flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -576,22 +639,22 @@
       </Frame>
     </section>
     <section class="flex justify-center bg-gray-100 px-10 pb-10" id="contact">
-      <Frame wide class="rounded-xl p-5 text-gray-700">
+      <Frame wide class="rounded-xl p-5 text-gray-800">
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-12">
           <div class="mb-20 md:mb-0">
             <div class="text-center md:text-left">
               <h4
-                class="text-[24px] font-bold leading-tight text-gray-600 md:text-[28px]"
+                class="text-[24px] font-bold leading-tight text-gray-800 md:text-[28px]"
               >
                 Kontakt
               </h4>
-              <p class="pb-6 text-sm text-gray-500 sm:text-base">
+              <p class="pb-6 text-sm text-gray-600 sm:text-base">
                 Z chęcią odpowiemy na Twoje pytania
               </p>
             </div>
 
             <div class="mb-2">
-              <label for="name" class="text-left text-sm text-gray-500"
+              <label for="name" class="text-left text-sm text-gray-600"
                 >Imię i nazwisko</label
               >
               <div>
@@ -605,7 +668,7 @@
             </div>
 
             <div class="mb-2">
-              <label for="email" class="text-left text-sm text-gray-500"
+              <label for="email" class="text-left text-sm text-gray-600"
                 >Adres email</label
               >
               <div>
@@ -619,7 +682,7 @@
             </div>
 
             <div class="mb-2">
-              <label for="message" class="text-left text-sm text-gray-500"
+              <label for="message" class="text-left text-sm text-gray-600"
                 >Treść wiadomości</label
               >
               <div>
