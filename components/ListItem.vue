@@ -1,5 +1,5 @@
 <template>
-  <div class="my-2 rounded-xl bg-gray-100 px-5 py-3">
+  <div class="rounded-xl px-5" :class="`bg-gray-${gray}`">
     <div class="flex items-center">
       <div class="w-[40px] text-gray-800">
         <svg
@@ -21,3 +21,12 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+defineProps({
+  gray: {
+    type: Number,
+    default: 100,
+  },
+});
+</script>

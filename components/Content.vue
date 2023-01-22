@@ -185,25 +185,33 @@
           </div>
           <div class="col-span-2 flex justify-center md:block">
             <div class="max-w-[400px] md:max-w-none">
-              <ListItem v-animate-on-scroll
+              <ListItem class="my-2 py-3" v-animate-on-scroll
                 >systemy oświetlenia wewnętrznego i zewnętrznego</ListItem
               >
-              <ListItem v-animate-on-scroll
+              <ListItem class="my-2 py-3" v-animate-on-scroll
                 >systemy oświetlenia awaryjnego</ListItem
               >
-              <ListItem v-animate-on-scroll>źródła światła</ListItem>
-              <ListItem v-animate-on-scroll>projekty oświetlenia</ListItem>
-              <ListItem v-animate-on-scroll
+              <ListItem class="my-2 py-3" v-animate-on-scroll
+                >źródła światła</ListItem
+              >
+              <ListItem class="my-2 py-3" v-animate-on-scroll
+                >projekty oświetlenia</ListItem
+              >
+              <ListItem class="my-2 py-3" v-animate-on-scroll
                 >osprzęt elektroinstalacyjny renomowanych producentów krajowych
                 i zagranicznych</ListItem
               >
-              <ListItem v-animate-on-scroll>kable i przewody</ListItem>
-              <ListItem v-animate-on-scroll>listwy i koryta kablowe</ListItem>
-              <ListItem v-animate-on-scroll
+              <ListItem class="my-2 py-3" v-animate-on-scroll
+                >kable i przewody</ListItem
+              >
+              <ListItem class="my-2 py-3" v-animate-on-scroll
+                >listwy i koryta kablowe</ListItem
+              >
+              <ListItem class="my-2 py-3" v-animate-on-scroll
                 >rozdzielnie nn, wyłączniki nadmiarowo-prądowe i
                 różnicowo-prądowe</ListItem
               >
-              <ListItem v-animate-on-scroll
+              <ListItem class="my-2 py-3" v-animate-on-scroll
                 >gniazda i przewody do instalacji komputerowych i
                 telewizyjnych</ListItem
               >
@@ -459,65 +467,129 @@
       class="flex justify-center bg-gray-100 px-8 pb-12 text-center sm:px-10"
       id="portfolio"
     >
-      <Frame>
+      <Frame wide>
         <h4
           v-animate-on-scroll
           class="mb-8 pt-4 text-[24px] font-bold text-gray-800 md:text-[28px]"
         >
           Nasze <span class="text-blue-500">realizacje</span>
         </h4>
-        <div v-animate-on-scroll class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <div
-            class="relative h-[200px] rounded-xl bg-[url('/img/pexels-boris-ulzibat-4281932.jpg')] bg-cover bg-center bg-no-repeat"
-          >
-            <div
-              class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
-            >
-              <span
-                class="absolute bottom-2 left-0 w-full text-center text-white"
-                >Realizacja nr 1</span
-              >
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+          <div class="flex justify-center" v-animate-on-scroll>
+            <div>
+              <div class="flex h-[100px] items-end">
+                <img
+                  class="my-2 max-h-[100px]"
+                  src="~/assets/img/nero.png"
+                  alt="Green Caffe Nero"
+                />
+              </div>
+              <p class="my-2 leading-4">
+                <strong> Green Caffe Nero </strong>
+              </p>
             </div>
           </div>
 
-          <div
-            class="relative mt-2 h-[200px] rounded-xl bg-[url('/img/pexels-markus-winkler-5037900.jpg')] bg-cover bg-center bg-no-repeat"
-          >
-            <div
-              class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
-            >
-              <span
-                class="absolute bottom-2 left-0 w-full text-center text-white"
-                >Realizacja nr 2</span
-              >
+          <div class="flex justify-center" v-animate-on-scroll>
+            <div>
+              <div class="flex h-[100px] items-end">
+                <img
+                  class="my-2 max-h-[100px]"
+                  src="~/assets/img/wilanow.png"
+                  alt="Muzeum Pałacu Króla Jana III"
+                />
+              </div>
+              <p class="my-2 leading-4">
+                <strong>
+                  Muzeum Pałacu <br />
+                  Króla Jana III
+                </strong>
+                <br />
+                <span class="text-sm">w Wilanowie</span>
+              </p>
             </div>
           </div>
 
-          <div
-            class="relative -mt-2 h-[200px] rounded-xl bg-[url('/img/pexels-boris-ulzibat-4281932.jpg')] bg-cover bg-center bg-no-repeat"
-          >
-            <div
-              class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
-            >
-              <span
-                class="absolute bottom-2 left-0 w-full text-center text-white"
-                >Realizacja nr 3</span
-              >
+          <div class="flex justify-center" v-animate-on-scroll>
+            <div>
+              <div class="flex h-[100px] items-end">
+                <img
+                  class="my-2 max-h-[100px]"
+                  src="~/assets/img/mariott.png"
+                  alt="Mariott Hotel w Warszawie"
+                />
+              </div>
+              <p class="my-2 leading-4">
+                <strong>Mariott Hotel</strong><br />
+                <span class="text-sm">w Warszawie</span>
+              </p>
             </div>
           </div>
 
-          <div
-            class="relative h-[200px] rounded-xl bg-[url('/img/pexels-markus-winkler-5037900.jpg')] bg-cover bg-center bg-no-repeat"
-          >
-            <div
-              class="absolute bottom-0 left-0 h-[50px] w-full rounded-b-xl bg-gradient-to-t from-blue-500 to-transparent"
-            >
-              <span
-                class="absolute bottom-2 left-0 w-full text-center text-white"
-                >Realizacja nr 4</span
-              >
+          <div class="flex justify-center" v-animate-on-scroll>
+            <div>
+              <div class="flex h-[100px] items-end">
+                <img
+                  class="my-2 max-h-[100px]"
+                  src="~/assets/img/american-school.png"
+                  alt="American School of Warsaw"
+                />
+              </div>
+              <p class="my-2 leading-4">
+                <strong>American School</strong><br />
+                <span class="text-sm">of Warsaw</span>
+              </p>
             </div>
           </div>
+        </div>
+
+        <div class="my-10">
+          <p class="text-sm" v-animate-on-scroll>a także:</p>
+          <div
+            class="flex flex-wrap justify-center text-sm"
+            v-animate-on-scroll
+          >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>Nexteam</strong> - Opel Dealer</ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>Vector</strong> Doradztwo Biznesowe</ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>AB</strong> Technologie</ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>CDBP</strong> Sp. z o.o.</ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>Jeronimo Martins</strong> - Biedronka</ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>New Approach</strong></ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>Odyssey</strong> - Dealer Nissan</ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>Winestory</strong></ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>Estee Lauder</strong></ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>Mountain Warehouse</strong></ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>Kiehl's</strong></ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>MAC</strong></ListItem
+            >
+            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+              ><strong>Factory Annopol</strong></ListItem
+            >
+          </div>
+          <p class="text-sm" v-animate-on-scroll>i wiele innych</p>
         </div>
       </Frame>
     </section>
