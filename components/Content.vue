@@ -234,7 +234,7 @@
             v-animate-on-scroll
             class="mb-4 text-[24px] font-bold md:text-[28px]"
           >
-            Nasi partnerzy
+            Partnerzy
           </h4>
         </div>
         <div
