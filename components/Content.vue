@@ -549,43 +549,82 @@
             class="flex flex-wrap justify-center text-sm"
             v-animate-on-scroll
           >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>Nexteam</strong> - Opel Dealer</ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>Vector</strong> Doradztwo Biznesowe</ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>AB</strong> Technologie</ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>CDBP</strong> Sp. z o.o.</ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>Jeronimo Martins</strong> - Biedronka</ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>New Approach</strong></ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>Odyssey</strong> - Dealer Nissan</ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>Winestory</strong></ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>Estee Lauder</strong></ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>Mountain Warehouse</strong></ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>Kiehl's</strong></ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>MAC</strong></ListItem
             >
-            <ListItem :gray="200" class="mx-2 my-1 py-1.5 sm:py-3"
+            <ListItem
+              v-animate-on-scroll
+              :gray="200"
+              class="mx-2 my-1 py-1.5 sm:py-3"
               ><strong>Factory Annopol</strong></ListItem
             >
           </div>
