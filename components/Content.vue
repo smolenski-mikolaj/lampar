@@ -1,47 +1,59 @@
 <template>
   <main>
-    <section class="relative flex justify-center bg-gray-100 px-10">
+    <section
+      class="relative flex h-[420px] justify-center sm:h-[450px] sm:px-10 sm:pt-10 lg:h-[550px] 3xl:h-[640px]"
+    >
+      <div class="pointer-events-none absolute top-0 left-0 h-full w-full">
+        <img
+          class="h-full w-full object-cover"
+          src="~/assets/img/interior.jpg"
+          alt="baner"
+        />
+      </div>
+      <div
+        class="pointer-events-none absolute top-0 left-0 h-full w-full bg-gradient-to-t from-blue-800 sm:bg-gradient-to-r"
+      ></div>
       <Frame>
-        <div
-          class="-mb-10 grid grid-cols-1 gap-4 pt-6 md:grid-cols-5 md:gap-20 md:pt-12"
-        >
+        <div class="flex justify-center sm:block">
           <div
-            class="order-2 flex flex-col justify-center text-center md:order-1 md:col-span-2 md:text-left"
+            class="absolute flex w-full max-w-[400px] flex-col justify-center pt-12 text-center sm:w-1/3 sm:text-left lg:w-1/4"
           >
             <h1
               v-animate-on-scroll
-              class="mt-2 text-[28px] font-extrabold leading-8 md:mt-0 md:text-[36px] md:leading-10"
+              class="mt-32 text-[28px] font-extrabold leading-7 sm:mt-0 sm:text-[36px] sm:leading-9"
             >
-              <span class="text-blue-500">Oświetlimy</span> <br />
-              <span class="text-gray-800">każdy obiekt</span>
+              <span class="text-blue-300">Oświetlimy</span>
+              <br />
+              <span class="text-gray-100">każdy obiekt</span>
             </h1>
-            <h2 v-animate-on-scroll class="mt-4 pb-16 text-gray-600">
+            <h2 v-animate-on-scroll class="mt-4 pb-16 text-gray-200">
               Jesteśmy dystrybutorem oświetlenia profesjonalnego, dekoracyjnego
               i awaryjnego z wieloletnim doświadczeniem na rynku polskim.
             </h2>
           </div>
-          <div
-            class="pointer-events-none order-1 flex flex-col items-center justify-center md:order-2 md:col-span-3"
-          >
-            <img
-              v-animate-on-scroll
-              class="max-h-[200px] md:my-10 md:max-h-[400px]"
-              src="~/assets/img/lamps.svg"
-              alt="baner"
-            />
-          </div>
         </div>
       </Frame>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="absolute bottom-0"
+      >
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,160L48,149.3C96,139,192,117,288,128C384,139,480,181,576,197.3C672,213,768,203,864,208C960,213,1056,235,1152,234.7C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <section
-      class="relative flex justify-center px-6 pt-16 pb-10 md:pb-10 md:pt-32 2xl:pt-40"
+      class="relative flex justify-center px-6 pt-10 pb-10 md:-mt-8 md:pt-0 2xl:-mt-16 2xl:pt-0"
     >
       <Frame id="about" class="pt-6">
         <div>
           <div class="text-center text-gray-800">
             <h4
               v-animate-on-scroll
-              class="mb-2 text-[24px] font-bold leading-8 text-gray-800 md:text-[28px]"
+              class="mb-2 text-[24px] font-bold leading-6 text-gray-800 md:text-[28px] md:leading-8"
             >
               Kompleksowo realizujemy inwestycje
             </h4>
@@ -50,7 +62,7 @@
               class="px-4 pb-4 text-center text-gray-600 md:px-24 xl:px-48"
             >
               Oświetlamy obiekty użyteczności publicznej - biura, szkoły, centra
-              handlowe, przychodnie, gabinety, restauracje, sklepy.
+              handlowe, hotele, przychodnie, gabinety, restauracje, sklepy.
             </p>
           </div>
           <div class="flex justify-center">
@@ -61,7 +73,7 @@
               >
                 <div class="text-center leading-6 text-white">
                   <h4 class="text-[24px] font-bold sm:text-[32px]">
-                    400<span class="inline-block">
+                    500<span class="inline-block">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -78,7 +90,7 @@
                       </svg>
                     </span>
                   </h4>
-                  <div class="text-sm sm:text-base">realizacji</div>
+                  <p class="mt-1 text-sm">realizacji</p>
                 </div>
               </div>
               <div
@@ -104,7 +116,7 @@
                       </svg>
                     </span>
                   </h4>
-                  <div class="text-sm sm:text-base">partnerów</div>
+                  <p class="mt-1 max-w-[150px] text-sm">producentów</p>
                 </div>
               </div>
               <div
@@ -130,31 +142,20 @@
                       </svg>
                     </span>
                   </h4>
-                  <div class="text-sm sm:text-base">lat w branży</div>
+                  <p class="mt-1 text-sm">lat w branży</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </Frame>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        class="absolute top-0 -z-10"
-      >
-        <path
-          fill="#f3f4f6"
-          fill-opacity="1"
-          d="M0,64L48,64C96,64,192,64,288,74.7C384,85,480,107,576,106.7C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
       <img
-        class="pointer-events-none absolute left-[25%] top-[14%] -z-10 h-12 rotate-12 md:left-[10%] md:top-[20%] md:h-32"
+        class="pointer-events-none absolute left-[25%] top-0 h-12 rotate-12 md:left-[10%] md:-top-[12%] md:h-32"
         src="~/assets/img/icons/bulb1.svg"
         alt="żarówka dekoracyjna"
       />
       <img
-        class="pointer-events-none absolute right-[30%] top-[92%] -z-10 h-12 -rotate-12 md:right-[15%] md:top-[70%] md:h-32"
+        class="pointer-events-none absolute right-[30%] top-[92%] -z-10 h-12 -rotate-12 md:right-[15%] md:top-[60%] md:h-32"
         src="~/assets/img/icons/bulb2.svg"
         alt="żarówka dekoracyjna"
       />
@@ -168,7 +169,7 @@
                 v-animate-on-scroll
                 class="px-4 pb-4 text-center text-[24px] font-bold leading-6 text-gray-800 sm:px-0 md:text-left md:text-[28px] md:leading-8"
               >
-                Realizujemy szeroki zakres
+                Oferujemy szeroki zakres
                 <span class="text-blue-500">usług</span>
               </h4>
               <p
@@ -185,33 +186,33 @@
           </div>
           <div class="col-span-2 flex justify-center md:block">
             <div class="max-w-[400px] md:max-w-none">
-              <ListItem class="my-2 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
                 >systemy oświetlenia wewnętrznego i zewnętrznego</ListItem
               >
-              <ListItem class="my-2 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
                 >systemy oświetlenia awaryjnego</ListItem
               >
-              <ListItem class="my-2 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
                 >źródła światła</ListItem
               >
-              <ListItem class="my-2 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
                 >projekty oświetlenia</ListItem
               >
-              <ListItem class="my-2 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
                 >osprzęt elektroinstalacyjny renomowanych producentów krajowych
                 i zagranicznych</ListItem
               >
-              <ListItem class="my-2 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
                 >kable i przewody</ListItem
               >
-              <ListItem class="my-2 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
                 >listwy i koryta kablowe</ListItem
               >
-              <ListItem class="my-2 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
                 >rozdzielnie nn, wyłączniki nadmiarowo-prądowe i
                 różnicowo-prądowe</ListItem
               >
-              <ListItem class="my-2 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
                 >gniazda i przewody do instalacji komputerowych i
                 telewizyjnych</ListItem
               >
@@ -226,7 +227,7 @@
       />
     </section>
     <section
-      class="relative flex justify-center px-10 pt-16 pb-24 text-gray-800 md:pb-40 2xl:pb-64"
+      class="relative flex justify-center px-10 pt-16 pb-24 text-gray-800 md:pb-40 2xl:pb-52"
     >
       <Frame class="flex flex-col items-center">
         <div>
@@ -234,216 +235,33 @@
             v-animate-on-scroll
             class="mb-4 text-[24px] font-bold md:text-[28px]"
           >
-            Partnerzy
+            Osprzęt
           </h4>
         </div>
         <div
           v-animate-on-scroll
           class="flex flex-col justify-center text-gray-400 sm:flex-row"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            id="svg2759"
-            version="1.0"
-            viewBox="0 0 500 92"
-            class="mx-5 my-2 h-5"
-          >
-            <defs id="defs2761">
-              <clipPath id="clipPath2855">
-                <path
-                  fill="currentColor"
-                  id="path2857"
-                  d="m0 595.28h841.89v-595.28h-841.89v595.28z"
-                />
-              </clipPath>
-            </defs>
-            <g id="layer1" transform="translate(-127.26 -383.69)">
-              <g id="g2851" transform="matrix(1.25 0 0 -1.25 -154.36 849.47)">
-                <g id="g2853" clip-path="url(#clipPath2855)">
-                  <path
-                    id="path2859"
-                    d="m360.92 371.16h-21.48v-27.97h-22.36v27.97h-21.48v-70.37h21.48v27.68h22.36v-27.68h21.48v70.37zm74.72-56.23v56.23h-21.48v-70.37h38.84l3.23 14.14h-20.59zm-37.36 56.23h-21.48v-70.37h21.48v70.37zm87.08 0h-21.47v-70.37h21.47v70.37zm105.9-17.96c0 3.83 3.83 5.6 10 5.6 6.77 0 14.13-1.48 19.13-3.55l-1.76 15.32c-5.6 1.18-10.6 2.06-19.71 2.06-17.36 0-29.13-6.85-29.13-21.2 0-24.73 33.55-19.73 33.55-31.21 0-4.41-3.25-6.76-11.19-6.76-7.05 0-17.95 2.35-24.42 5.59l2.36-16.2c6.47-2.36 15.29-3.53 22.36-3.53 17.94 0 32.65 5.89 32.65 23.56 0 23.54-33.84 19.13-33.84 30.32m-60.59-35.63c19.99 0 32.65 10.31 32.65 28.27 0 19.72-13.53 26.79-35.6 26.79-8.53 0-18.83-0.59-26.18-1.47v-70.37h21.48v16.78h7.65zm11.47 27.97c0-9.12-4.41-15.31-15.6-15.31h-3.52v29.08c1.25 0.07 2.42 0.07 3.52 0.07 10.59 0 15.6-5 15.6-13.84m-287.72-27.97c20 0 32.65 10.31 32.65 28.27 0 19.72-13.53 26.79-35.59 26.79-8.54 0-18.83-0.59-26.19-1.47v-70.37h21.48v16.78h7.65zm11.48 27.97c0-9.12-4.42-15.31-15.6-15.31h-3.53v29.08c1.25 0.07 2.43 0.07 3.53 0.07 10.59 0 15.6-5 15.6-13.84"
-                    fill="currentColor"
-                  />
-                </g>
-              </g>
-            </g>
-          </svg>
-          <svg
-            xmlns:svg="http://www.w3.org/2000/svg"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.0"
-            id="svg7217"
-            viewBox="0 0 750 175"
-            class="mx-5 my-2 h-5"
-          >
-            <defs id="defs7219" />
-            <g transform="translate(-1558.05, 890.855)" id="layer1">
-              <g transform="translate(17.7165, 17.6477)" id="g7654">
-                <path
-                  d="M 1745.3116,-787.56904 C 1743.9367,-772.31838 1759.5622,-763.94303 1773.563,-764.19304 C 1783.9382,-764.44306 1796.6889,-766.19314 1798.314,-779.81872 C 1801.5641,-807.06989 1713.1852,-787.44403 1712.5603,-844.19647 C 1712.3101,-874.32275 1742.5615,-891.6985 1771.9379,-890.82344 C 1813.6895,-889.5734 1830.5655,-866.19741 1830.5655,-839.69629 L 1796.4387,-839.69629 C 1796.4387,-839.69629 1799.564,-859.94715 1771.3127,-860.82217 C 1760.6872,-861.07219 1749.3117,-856.82199 1747.9369,-847.07158 C 1744.4365,-821.44548 1831.5653,-840.4463 1832.1905,-782.44382 C 1832.4404,-753.69259 1805.8141,-734.19177 1772.6879,-734.69177 C 1706.9352,-735.56683 1710.8102,-783.56889 1710.5603,-787.56904 L 1745.3116,-787.56904"
-                  fill="currentColor"
-                  id="path115"
-                />
-                <path
-                  d="M 2230.9574,-822.32054 L 2230.9574,-740.19201 L 2266.7089,-740.19201 L 2266.5838,-886.94831 L 2230.5824,-886.94831 L 2193.8307,-826.69571 L 2159.3293,-886.94831 L 2121.4526,-886.94831 L 2121.4526,-740.31702 L 2158.3294,-740.31702 L 2158.3294,-819.94542 L 2194.3308,-761.81793 L 2230.9574,-822.32054"
-                  fill="currentColor"
-                  id="path119"
-                />
-                <path
-                  d="M 2061.9503,-886.94831 L 2115.3273,-740.31702 L 2078.7007,-740.31702 L 2070.0757,-765.94312 L 2012.3232,-765.94312 L 2003.4475,-740.31702 L 1966.5711,-740.31702 L 2020.0735,-886.94831 L 2061.9503,-886.94831 z M 2041.3242,-849.94669 L 2022.5733,-796.69444 L 2059.7,-796.69444 L 2041.3242,-850.32172 L 2041.3242,-849.94669"
-                  fill="currentColor"
-                  style="fill-rule: evenodd; stroke: none"
-                  id="path123"
-                />
-                <path
-                  d="M 1903.8183,-787.19401 L 1881.5674,-787.19401 L 1881.5674,-740.31702 L 1847.3159,-740.31702 L 1847.3159,-886.8233 L 1922.3192,-886.8233 C 1949.3205,-886.8233 1970.3213,-863.69729 1968.6962,-835.32108 C 1967.5713,-814.07019 1958.3206,-798.31951 1938.8198,-789.44412 L 1963.3209,-740.31702 L 1925.6945,-740.31702 L 1903.8183,-787.19401 z M 1881.0673,-855.82196 L 1915.9441,-855.82196 C 1926.1942,-855.82196 1933.0695,-846.69656 1933.5696,-836.44612 C 1934.0697,-827.44576 1927.0693,-816.44527 1916.9439,-816.44527 L 1881.0673,-816.44527 L 1881.0673,-855.82196"
-                  fill="currentColor"
-                  style="fill-rule: evenodd; stroke: none"
-                  id="path132"
-                />
-                <path
-                  d="M 1630.0569,-733.44173 C 1673.9337,-733.19171 1703.1849,-768.19323 1702.1847,-811.44506 C 1704.1848,-857.82205 1672.4334,-889.69841 1630.0569,-889.5734 C 1588.805,-889.5734 1557.8035,-857.19701 1558.0538,-811.44506 C 1557.5537,-766.31814 1586.8049,-731.94167 1630.0569,-733.44173 z M 1630.0569,-858.69707 C 1655.9328,-859.0721 1666.8082,-835.44609 1666.6835,-811.57007 C 1665.1831,-789.69414 1655.1829,-765.5681 1629.9318,-765.31808 C 1605.0556,-765.31808 1593.555,-788.69411 1593.1801,-811.44506 C 1593.555,-834.32105 1604.1805,-859.0721 1630.0569,-858.69707"
-                  fill="currentColor"
-                  id="path141"
-                />
-              </g>
-            </g>
-          </svg>
-          <svg
-            xmlns:svg="http://www.w3.org/2000/svg"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="-0.385 -0.218 680 180"
-            id="svg2"
-            xml:space="preserve"
-            class="mx-5 my-2 h-5"
-          >
-            <defs id="defs4"></defs>
-            <g id="g6">
-              <path
-                d="M 164.437,20.22 L 164.437,155.61 L 233.421,155.61 C 256.28,155.61 274.576,141.875 274.576,118.911 C 274.576,92.314 249.776,82.666 249.776,82.666 C 249.776,82.666 270.86,74.595 270.86,51.865 C 270.86,34.067 255.797,20.219 238.226,20.219 L 164.437,20.219 M 194.281,45.449 L 194.281,71.489 L 228.446,71.489 C 237.736,71.489 242.53,64.507 242.53,58.447 C 242.53,52.387 238.421,45.449 228.641,45.449 L 194.281,45.449 L 194.281,45.449 z M 194.281,95.425 L 194.281,129.243 L 228.051,129.243 C 239.301,129.243 245.466,121.206 245.466,112.212 C 245.466,103.218 237.932,95.425 228.542,95.425 L 194.281,95.425 L 194.281,95.425 z "
-                fill="currentColor"
-                style="fill-rule: evenodd"
-                id="path8"
-              />
-              <path
-                d="M 285.372,53.887 L 285.372,155.61 L 314.037,155.61 C 314.037,155.61 314.037,106.054 314.037,99.697 C 314.037,90.41 319.796,83.994 324.332,80.639 C 331.737,75.16 342.596,76.625 342.596,76.625 L 342.596,51.118 C 342.596,51.118 333.502,50.239 326.651,53.887 C 317.086,58.985 313.445,67.344 313.445,67.344 L 313.445,53.887 L 285.372,53.887"
-                fill="currentColor"
-                id="path10"
-              />
-              <rect
-                width="28.364"
-                height="135.39101"
-                x="395.711"
-                y="20.219999"
-                fill="currentColor"
-                id="rect12"
-              />
-              <rect
-                width="28.367001"
-                height="135.39101"
-                x="441.48499"
-                y="20.219999"
-                fill="currentColor"
-                id="rect14"
-              />
-              <rect
-                width="28.365"
-                height="101.729"
-                x="349.56601"
-                y="53.887001"
-                fill="currentColor"
-                id="rect16"
-              />
-              <rect
-                width="28.365"
-                height="22.979"
-                x="349.56601"
-                y="20.219999"
-                fill="currentColor"
-                id="rect18"
-              />
-              <path
-                d="M 484.471,53.887 C 484.471,53.887 484.471,110.562 484.471,124.043 C 484.471,143.101 499.004,158.843 518.174,158.843 C 539.596,158.843 547.324,142.613 547.324,142.613 L 547.324,155.611 L 574.221,155.611 L 574.221,53.887 L 545.705,53.887 C 545.705,53.887 545.705,110.552 545.705,118.858 C 545.705,127.169 539.011,135.284 529.518,135.284 C 520.034,135.284 512.99,126.871 512.99,119.737 C 512.99,112.603 512.99,53.887 512.99,53.887 L 484.471,53.887"
-                fill="currentColor"
-                id="path20"
-              />
-              <polyline
-                points="584.281,54.126 614.131,102.246 578.288,155.61 609.925,155.61 628.827,125.19 648.026,155.61     678.89,155.61 643.336,102.007 673.131,54.126 644.385,54.126 628.711,82.251 613.086,54.126 584.281,54.126 "
-                id="polyline22"
-                fill="currentColor"
-              />
-              <rect
-                width="134.00101"
-                height="133.911"
-                x="0.875"
-                y="21.455"
-                fill="currentColor"
-                id="rect24"
-              />
-
-              <rect
-                width="134.00101"
-                height="133.911"
-                x="0.875"
-                y="21.455"
-                style="
-                  fill: none;
-                  stroke: #6f7682;
-                  stroke-width: 1.75;
-                  stroke-miterlimit: 3.86400008;
-                "
-                id="rect26"
-              />
-              <polyline
-                fill="#6f7682"
-                points="0.021,83.828 83.9,0 83.9,66.421 0.021,156.138 0.021,83.828 "
-                id="polyline28"
-              />
-              <polyline
-                fill="#6f7682"
-                points="135.677,20.654 50.455,110.376 50.455,178.936 135.682,90.288 135.677,20.654 "
-                id="polyline30"
-              />
-            </g>
-          </svg>
-          <svg
-            xmlns:svg="http://www.w3.org/2000/svg"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.0"
-            viewBox="0 0 250 62"
-            class="mx-5 my-2 h-5"
-          >
-            <path
-              d="M 12.45,0 L 12.45,15.13 L 15.14,15.13 L 15.14,0 L 12.45,0 z M 16.65,3.59 L 16.65,15.09 L 28.77,15.09 L 28.77,45.18 L 39.8,45.18 L 39.8,3.59 L 16.65,3.59 z M 0,3.64 L 0,45.23 L 23.11,45.23 L 23.11,33.73 L 10.99,33.73 L 10.99,3.64 L 0,3.64 z M 24.62,33.68 L 24.62,48.86 L 27.3,48.86 L 27.3,33.68 L 24.62,33.68 z"
-              fill="currentColor"
-              style="fill-opacity: 1; fill-rule: nonzero; stroke: none"
-            />
-            <path
-              d="M 54.19,2.41 L 54.19,47.31 L 63.94,47.31 L 63.94,2.41 L 54.19,2.41 z M 226.08,2.41 L 226.08,17.31 C 223.98,15.78 220.57,15.53 220.57,15.53 C 210.07,15.26 205.59,24.14 205.62,31.09 C 205.54,40.2 211.55,47.64 220.53,46.93 C 222.62,46.71 224.34,45.89 226.08,44.52 L 226.08,47.31 L 236.27,47.31 L 236.27,2.41 L 226.08,2.41 z M 81.49,13.26 C 73.5,13.26 65.65,19.83 65.65,30.18 C 65.66,41.83 72.95,48.58 82.58,48.29 C 89.93,48.05 95.02,43.4 96.87,36.88 L 86.82,36.88 C 86.31,37.92 84.9,39.14 81.96,39.14 C 78.2,39.14 76.21,36.35 76.21,33.58 L 97.43,33.58 C 98.64,21.49 90.85,13.26 81.49,13.26 z M 152.8,13.91 C 147.67,13.91 143.46,17.84 143.46,17.84 L 143.46,14.49 L 133,14.49 L 133,47.31 L 143.46,47.31 L 143.46,30.56 C 143.53,22.38 152.8,21.79 152.8,21.79 L 152.8,13.91 z M 155.2,13.91 L 155.2,21.56 C 155.2,21.56 156.1,21.34 159.88,21.46 C 164.68,21.64 164.12,25.56 164.12,25.56 C 164.12,25.56 161.78,24.13 158.41,24.1 C 154.73,24.01 147.34,26.26 147.34,36.04 C 147.32,44.65 154.23,47.16 158.32,47.16 C 162.26,47.16 164.54,45.23 164.54,45.23 L 164.54,47.31 L 174.06,47.31 C 174.06,47.31 174.06,29.64 174.06,24.94 C 174.06,20.6 173.26,19.42 171.28,17.22 C 168.51,14.17 161.94,13.91 161.94,13.91 L 155.2,13.91 z M 120.68,14.44 L 120.68,17.88 C 113.94,11.06 98.2,15.99 98.76,31.37 C 99.24,45.77 114.47,50.1 120.68,44.52 L 120.68,48.33 C 120.65,52.7 115.31,52.55 115.31,52.55 C 110.65,52.33 109.65,49.38 109.65,49.38 L 97.9,49.38 C 100.36,65.78 129.14,66.41 130.49,50.7 L 130.49,14.44 L 120.68,14.44 z M 176.33,14.44 L 176.33,47.31 L 186.38,47.31 L 186.38,27.92 C 186.38,23.24 193.83,22.92 193.83,27.92 L 193.83,47.31 L 203.73,47.31 L 203.73,22.74 C 203.73,17.78 197.27,10.49 186.38,17.55 L 186.38,14.44 L 176.33,14.44 z M 81.49,21.88 C 84.3,21.88 86.61,23.98 86.91,26.69 L 76.08,26.69 C 76.39,23.98 78.69,21.88 81.49,21.88 z M 114.6,24.58 C 118.1,24.58 120.97,27.42 120.97,30.93 C 120.97,34.45 118.1,37.26 114.6,37.26 C 111.09,37.26 108.28,34.45 108.28,30.93 C 108.28,27.42 111.09,24.58 114.6,24.58 z M 220.42,24.85 C 223.91,24.85 226.74,27.71 226.74,31.22 C 226.74,34.71 223.91,37.54 220.42,37.54 C 216.92,37.54 214.1,34.71 214.1,31.22 C 214.11,27.71 216.92,24.85 220.42,24.85 z M 160.43,30.98 C 162.76,30.98 164.63,32.91 164.63,35.24 C 164.63,37.58 162.76,39.43 160.43,39.43 C 158.1,39.43 156.19,37.58 156.19,35.24 C 156.19,32.91 158.1,30.98 160.43,30.98 z"
-              fill="currentColor"
-              style="fill-opacity: 1; fill-rule: nonzero; stroke: none"
-            />
-            <path
-              d="M 244.28,2.46 C 241.17,2.46 238.58,5.04 238.58,8.16 C 238.58,11.32 241.17,13.87 244.28,13.87 C 247.45,13.87 250,11.32 250,8.16 C 250,5.04 247.43,2.46 244.28,2.46 z M 244.28,3.26 C 247,3.26 249.2,5.49 249.2,8.16 C 249.2,10.86 246.98,13.02 244.28,13.02 C 241.59,13.02 239.39,10.86 239.39,8.16 C 239.38,5.49 241.58,3.26 244.28,3.26 z M 242.02,5.1 L 242.02,11.09 L 242.83,11.09 L 242.83,8.49 L 244.76,8.49 C 245.71,8.49 245.85,9.08 245.85,9.58 C 245.85,9.81 245.85,10.73 245.99,11.09 L 246.98,11.09 L 246.98,10.94 C 246.72,10.79 246.66,10.68 246.65,10.34 L 246.6,9.25 C 246.57,8.42 246.23,8.25 245.89,8.12 C 246.27,7.89 246.74,7.59 246.74,6.7 C 246.74,5.43 245.71,5.1 244.76,5.1 L 242.02,5.1 z M 242.83,5.76 L 244.81,5.76 C 245.23,5.76 245.89,5.88 245.89,6.79 C 245.89,7.68 245.28,7.83 244.67,7.83 L 242.83,7.83 L 242.83,5.76 z"
-              style="
-                fill: #888689;
-                fill-opacity: 1;
-                fill-rule: nonzero;
-                stroke: none;
-              "
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 144.57 26.93"
-            class="mx-5 my-2 h-5"
-          >
-            <path
-              fill="#888689"
-              d="M13.78,9.48a6.53,6.53,0,0,1,.33,2.12V22.42H10.19V12.69A4.94,4.94,0,0,0,10,11.2a1.81,1.81,0,0,0-.57-1.07,2.12,2.12,0,0,0-1.06-.52,5.7,5.7,0,0,0-1.26-.07,4.22,4.22,0,0,0-1.25.31,3.38,3.38,0,0,0-1.17.9,4.19,4.19,0,0,0-.81,2.39v9.27H0V0H3.93V7.82l.26-.25A5.24,5.24,0,0,1,6.57,6.24,6.32,6.32,0,0,1,8.69,6a9,9,0,0,1,.94.12,6.52,6.52,0,0,1,2.4,1,4.76,4.76,0,0,1,1.31,1.38A4.69,4.69,0,0,1,13.6,9,2.84,2.84,0,0,1,13.78,9.48Zm54.87-3A6,6,0,0,0,67,7.35,4.72,4.72,0,0,0,65.75,8.8V6.34H61.89V22.43h3.85v-9A2.83,2.83,0,0,1,66.94,11a4.33,4.33,0,0,1,2.1-.89,6.5,6.5,0,0,1,2.2.1v-4A7.12,7.12,0,0,0,68.66,6.46ZM49.41,15.25a5,5,0,0,0,1.16,3.14,4.09,4.09,0,0,0,4.65.94,3.45,3.45,0,0,0,1.92-2.63H61.2v.14a6.74,6.74,0,0,1-1.67,3.48,7.57,7.57,0,0,1-4.4,2.35,9.9,9.9,0,0,1-4-.18A7.91,7.91,0,0,1,48,20.75a7.8,7.8,0,0,1-1.74-2.6,9.78,9.78,0,0,1-.64-4,9.68,9.68,0,0,1,.89-4.32,7.09,7.09,0,0,1,3.62-3.38A8.29,8.29,0,0,1,55.32,6a7.14,7.14,0,0,1,4.83,3.53,10.46,10.46,0,0,1,1,5.7H49.41Zm.19-3h7.62a3.42,3.42,0,0,0-1.79-2.93,3.91,3.91,0,0,0-3.83-.15A3.73,3.73,0,0,0,49.61,12.24Zm-20.36,7.9a4.47,4.47,0,0,0,.88,2.29h-4.7V21a6.24,6.24,0,0,1-2.54,1.41,7.55,7.55,0,0,1-2.85.25,6.56,6.56,0,0,1-3.43-1.26,4.5,4.5,0,0,1-1.79-2.9,4.65,4.65,0,0,1,.41-2.88,5,5,0,0,1,2.35-2.09,21.4,21.4,0,0,1,3.56-.89l3.46-.7a1,1,0,0,0,.68-.36,1.74,1.74,0,0,0,.15-.93,1.35,1.35,0,0,0-.75-1.26,4.37,4.37,0,0,0-2.06-.44,4.17,4.17,0,0,0-2.91.82,2.81,2.81,0,0,0-.48,1.75H15.47a6.53,6.53,0,0,1,.79-3.18A5.17,5.17,0,0,1,19.45,6.2a16.9,16.9,0,0,1,2.94-.32,12.44,12.44,0,0,1,2.93.32,7.19,7.19,0,0,1,2.43,1l.15.12a3.46,3.46,0,0,1,1.36,3Zm-3.82-3.79V14.47a13.7,13.7,0,0,1-1.73.39,25.67,25.67,0,0,0-2.92.67,5.67,5.67,0,0,0-1.25.55,1.74,1.74,0,0,0-.83,1.57,2.06,2.06,0,0,0,1.47,1.87A4.89,4.89,0,0,0,24,19,3,3,0,0,0,25.44,16.35Zm15.87-10H45V22a4,4,0,0,1-.8,2.59,5.75,5.75,0,0,1-3.76,2.12s-5.35.9-8.11-.86a4.22,4.22,0,0,1-2-3.23v-.18h4.11c.12.94.75,2,3.95,1.84s2.92-2.21,2.92-2.21V20a7.08,7.08,0,0,1-4.59,1.62,6.7,6.7,0,0,1-5.66-3,8.66,8.66,0,0,1-1.14-6.39,6.8,6.8,0,0,1,2.79-4.69,7.14,7.14,0,0,1,4.4-1.29,6.36,6.36,0,0,1,4.2,1.7Zm0,7.19A7.08,7.08,0,0,0,41,11.74a3.37,3.37,0,0,0-1-1.44,4.11,4.11,0,0,0-4.37-.52c-.25.12-2,.86-2.15,3.7a4.93,4.93,0,0,0,1.53,4.13,4,4,0,0,0,4.9-.07c1.25-1,1.36-2.28,1.36-3.75Zm49.32-3.43h-.06V6.34H88.77V22.43h2V13.86a5.54,5.54,0,0,1,6-5.77v-2A5.91,5.91,0,0,0,90.64,10.12ZM112,14.27c0,4.61-2.71,8.51-7.6,8.51s-7.6-3.9-7.6-8.51,2.71-8.51,7.6-8.51S112,9.66,112,14.27Zm-2,0c0-3.4-1.9-6.86-5.64-6.86s-5.64,3.46-5.64,6.86,1.9,6.85,5.64,6.85S110,17.67,110,14.27Zm15.28.4c0,3.27-1.46,6.45-4.83,6.45-3.12,0-4.21-1.52-4.3-4.42V6.34h-2V16.67c0,3.77,1.56,6.11,5.64,6.11a6,6,0,0,0,5.55-3.37h.06v3h1.8V6.34h-2Zm19.26-.4c0,4.58-2.34,8.51-7.23,8.51a5.72,5.72,0,0,1-5.58-3.52h-.06v7.62h-2V6.34h1.81V9.29h.06a6,6,0,0,1,5.74-3.52C142.23,5.76,144.57,9.69,144.57,14.27Zm-2,0c0-3.33-1.53-6.86-5.27-6.86-4.36,0-5.64,3.21-5.64,6.86,0,3.33,1.5,6.85,5.64,6.85C141.08,21.13,142.61,17.61,142.61,14.27ZM84.31,6.34h2V21.21a6.69,6.69,0,0,1-.3,2.1c-.8,2.41-3.2,3.61-6.43,3.61h-.41c-3.21,0-6.42-1.35-6.67-4.48h2c.41,2.18,2.56,2.84,4.71,2.84h.58a6.64,6.64,0,0,0,3.05-.77,3,3,0,0,0,1.42-2.23,16.73,16.73,0,0,0,.11-2V18.38h-.06a5.43,5.43,0,0,1-5.11,3c-5.14,0-7.26-3.36-7.26-7.61,0-4.08,2.62-7.47,7.26-7.47a5.67,5.67,0,0,1,5.11,3h.06Zm0,7.67c0-2.9-1.43-6.15-5.17-6.15s-5.3,3.07-5.3,6.15,1.65,5.89,5.3,5.89C82.53,19.9,84.31,17,84.31,14Z"
-            />
-          </svg>
+          <img
+            src="~/assets/img/partners/philips.svg"
+            class="my-2 h-5 px-4"
+            alt="Philips"
+          />
+          <img
+            src="~/assets/img/partners/osram.svg"
+            class="my-2 h-5 px-4"
+            alt="Osram"
+          />
+          <img
+            src="~/assets/img/partners/legrand.svg"
+            class="my-2 h-5 px-4"
+            alt="Legrand"
+          />
+          <img
+            src="~/assets/img/partners/hager.svg"
+            class="my-2 h-5 px-4"
+            alt="Hager"
+          />
         </div>
       </Frame>
       <svg
@@ -544,87 +362,74 @@
         </div>
 
         <div class="my-10">
-          <p class="text-sm" v-animate-on-scroll>a także:</p>
+          <p class="text-sm" v-animate-on-scroll>a także</p>
           <div
             class="flex flex-wrap justify-center text-sm"
             v-animate-on-scroll
           >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>Nexteam</strong> - Opel Dealer</ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>Vector</strong> Doradztwo Biznesowe</ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>AB</strong> Technologie</ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>CDBP</strong> Sp. z o.o.</ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>Jeronimo Martins</strong> - Biedronka</ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>New Approach</strong></ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>Odyssey</strong> - Dealer Nissan</ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>Winestory</strong></ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>Estee Lauder</strong></ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>Mountain Warehouse</strong></ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>Kiehl's</strong></ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>MAC</strong></ListItem
             >
             <ListItem
               v-animate-on-scroll
-              :gray="200"
-              class="mx-2 my-1 py-1.5 sm:py-3"
+              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
               ><strong>Factory Annopol</strong></ListItem
             >
           </div>
@@ -632,7 +437,7 @@
         </div>
       </Frame>
     </section>
-    <section class="flex justify-center bg-gray-100 py-12 pt-12 text-center">
+    <!-- <section class="flex justify-center bg-gray-100 py-12 pt-4 text-center">
       <Frame>
         <h4
           v-animate-on-scroll
@@ -748,7 +553,7 @@
           </div>
         </div>
       </Frame>
-    </section>
+    </section> -->
     <section class="flex justify-center bg-gray-100 px-10 pb-10" id="contact">
       <Frame wide class="rounded-xl p-5 text-gray-800">
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-12">
