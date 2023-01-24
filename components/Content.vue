@@ -1,49 +1,46 @@
 <template>
   <main>
     <section
-      class="relative flex h-[420px] justify-center sm:h-[450px] sm:px-10 sm:pt-10 lg:h-[550px] 3xl:h-[640px]"
+      class="relative bg-[url('/img/interior.jpg')] bg-cover bg-right-top"
     >
-      <div class="pointer-events-none absolute top-0 left-0 h-full w-full">
-        <img
-          class="h-full w-full object-cover"
-          src="~/assets/img/interior.jpg"
-          alt="baner"
-        />
-      </div>
       <div
         class="pointer-events-none absolute top-0 left-0 h-full w-full bg-gradient-to-t from-blue-800 sm:bg-gradient-to-r"
       ></div>
-      <Frame>
-        <div class="flex justify-center sm:block">
-          <div
-            class="absolute flex w-full max-w-[400px] flex-col justify-center pt-12 text-center sm:w-1/3 sm:text-left lg:w-1/4"
-          >
-            <h1
-              v-animate-on-scroll
-              class="mt-32 text-[28px] font-extrabold leading-7 sm:mt-0 sm:text-[36px] sm:leading-9"
+      <div class="relative flex justify-center px-6 sm:px-10">
+        <Frame>
+          <div class="flex justify-center sm:block">
+            <div
+              class="flex flex-col justify-center pt-40 pb-6 text-center sm:w-1/2 sm:pt-24 sm:pb-64 sm:text-left lg:w-1/3 3xl:pb-80"
             >
-              <span class="text-blue-300">Oświetlimy</span>
-              <br />
-              <span class="text-gray-100">każdy obiekt</span>
-            </h1>
-            <h2 v-animate-on-scroll class="mt-4 pb-16 text-gray-200">
-              Jesteśmy dystrybutorem oświetlenia profesjonalnego, dekoracyjnego
-              i awaryjnego z wieloletnim doświadczeniem na rynku polskim.
-            </h2>
+              <h1
+                v-animate-on-scroll
+                class="text-[28px] font-extrabold leading-8 sm:text-[36px] sm:leading-9"
+              >
+                <span class="text-blue-300">Oświetlimy</span>
+                <br />
+                <span class="text-gray-100">każdy obiekt</span>
+              </h1>
+              <h2 v-animate-on-scroll class="mt-4 pb-16 text-gray-200">
+                Jesteśmy dystrybutorem oświetlenia profesjonalnego,
+                dekoracyjnego i awaryjnego z wieloletnim doświadczeniem na rynku
+                polskim.
+              </h2>
+            </div>
           </div>
-        </div>
-      </Frame>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        class="absolute bottom-0"
-      >
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,160L48,149.3C96,139,192,117,288,128C384,139,480,181,576,197.3C672,213,768,203,864,208C960,213,1056,235,1152,234.7C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
+        </Frame>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="absolute -bottom-[1px] w-full"
+        >
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,160L48,149.3C96,139,192,117,288,128C384,139,480,181,576,197.3C672,213,768,203,864,208C960,213,1056,235,1152,234.7C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
     </section>
     <section
       class="relative flex justify-center px-6 pt-10 pb-10 md:-mt-8 md:pt-0 2xl:-mt-16 2xl:pt-0"
@@ -73,7 +70,35 @@
               >
                 <div class="text-center leading-6 text-white">
                   <h4 class="text-[24px] font-bold sm:text-[32px]">
-                    500<span class="inline-block">
+                    <span v-countdown-on-scroll>30</span
+                    ><span class="inline-block">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-4 w-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 4.5v15m7.5-7.5h-15"
+                        />
+                      </svg>
+                    </span>
+                  </h4>
+                  <p class="mt-1 text-sm">lat w branży</p>
+                </div>
+              </div>
+              <div
+                v-animate-on-scroll
+                class="mb-1 mt-4 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
+              >
+                <div class="text-center leading-6 text-white">
+                  <h4 class="text-[24px] font-bold sm:text-[32px]">
+                    <span v-countdown-on-scroll>500</span
+                    ><span class="inline-block">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -95,11 +120,12 @@
               </div>
               <div
                 v-animate-on-scroll
-                class="mb-1 mt-4 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
+                class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
               >
                 <div class="text-center leading-6 text-white">
                   <h4 class="text-[24px] font-bold sm:text-[32px]">
-                    20<span class="inline-block">
+                    <span v-countdown-on-scroll>20</span
+                    ><span class="inline-block">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -117,32 +143,6 @@
                     </span>
                   </h4>
                   <p class="mt-1 max-w-[150px] text-sm">producentów</p>
-                </div>
-              </div>
-              <div
-                v-animate-on-scroll
-                class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
-              >
-                <div class="text-center leading-6 text-white">
-                  <h4 class="text-[24px] font-bold sm:text-[32px]">
-                    30<span class="inline-block">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-4 w-4"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 4.5v15m7.5-7.5h-15"
-                        />
-                      </svg>
-                    </span>
-                  </h4>
-                  <p class="mt-1 text-sm">lat w branży</p>
                 </div>
               </div>
             </div>
@@ -265,7 +265,7 @@
         </div>
       </Frame>
       <svg
-        class="absolute bottom-0 -z-10"
+        class="absolute bottom-0 -z-10 w-full"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >

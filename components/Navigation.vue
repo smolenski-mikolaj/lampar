@@ -1,61 +1,46 @@
 <template>
   <nav class="flex h-20 justify-center px-4 sm:px-10">
     <Frame class="flex items-center justify-between">
-      <div
-        class="flex items-center justify-center text-[20px] text-blue-500 sm:text-[28px]"
-      >
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="h-6 w-6 sm:h-8 sm:w-8"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
-            />
-          </svg>
-        </div>
-        <span class="pl-1 font-bold">LAMPAR</span>
+      <div class="flex h-full items-center">
+        <img
+          class="h-[35px] lg:h-[45px]"
+          src="~/assets/img/logo.svg"
+          alt="logo"
+        />
       </div>
       <div class="hidden md:block">
         <button
-          class="px-3 text-sm uppercase text-gray-800 hover:text-blue-500"
+          class="px-2 text-sm font-bold uppercase text-gray-800 hover:text-blue-500 lg:px-3"
           @click.prevent="smoothScrollTo('#about')"
         >
           O nas
         </button>
         <button
-          class="px-3 text-sm uppercase text-gray-800 hover:text-blue-500"
+          class="px-2 text-sm font-bold uppercase text-gray-800 hover:text-blue-500 lg:px-3"
           @click.prevent="smoothScrollTo('#offer')"
         >
           Oferta
         </button>
         <button
-          class="px-3 text-sm uppercase text-gray-800 hover:text-blue-500"
+          class="px-2 text-sm font-bold uppercase text-gray-800 hover:text-blue-500 lg:px-3"
           @click.prevent="smoothScrollTo('#portfolio')"
         >
           Realizacje
         </button>
         <button
-          class="px-3 text-sm uppercase text-gray-800 hover:text-blue-500"
+          class="px-2 text-sm font-bold uppercase text-gray-800 hover:text-blue-500 lg:px-3"
           @click.prevent="smoothScrollTo('#contact')"
         >
           Kontakt
         </button>
       </div>
-      <div class="flex flex-col text-sm sm:text-base">
+      <div class="flex flex-col text-[12px] sm:text-base">
         <div class="flex items-center">
           <span class="pr-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
+              fill="currentColor"
               viewBox="0 0 24 24"
-              stroke-width="1.2"
               stroke="currentColor"
               class="h-4 w-4"
             >
@@ -74,7 +59,7 @@
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.2"
+              stroke-width="1.8"
               stroke="currentColor"
               class="h-4 w-4"
             >
