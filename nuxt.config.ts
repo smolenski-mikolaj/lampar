@@ -2,7 +2,22 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      title: "LAMPAR - hurtownia sprzętu oświetleniowego",
       meta: [
+        {
+          name: "description",
+          content:
+            "Zajmujemy się dystrybucją oświetlenia. Oświetlamy obiekty użyteczności publicznej.",
+        },
+        {
+          name: "keywords",
+          content:
+            "lampar, oświetlenie, usługi oświetleniowe, projekty oświetlenia, osprzęt elektroinstalacyjny, hurtownia, Warszawa, LED, nowoczesne systemy oświetlenia, źródła światła, kable, przewody, listwy, koryta kablowe, lampy, żarówki",
+        },
+        {
+          name: "robots",
+          content: "index, follow",
+        },
         {
           name: "viewport",
           content: "width=device-width, initial-scale=1,  shrink-to-fit=no",
