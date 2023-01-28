@@ -30,6 +30,22 @@ export default defineNuxtConfig({
           href: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap",
         },
       ],
+      script: [
+        {
+          src: "https://www.google.com/recaptcha/api.js",
+          async: true,
+          defer: true,
+        },
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-W4RNG12LBZ",
+          async: true,
+          defer: true,
+        },
+        {
+          innerHTML:
+            "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W4RNG12LBZ');",
+        },
+      ],
     },
   },
   css: ["~/assets/css/main.css"],

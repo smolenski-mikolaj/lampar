@@ -558,67 +558,153 @@
       <Frame wide class="rounded-xl p-5 text-gray-800">
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-12">
           <div class="mb-20 md:mb-0">
-            <div class="text-center md:text-left">
-              <h4
-                class="text-[24px] font-bold leading-tight text-gray-800 md:text-[28px]"
-              >
-                Kontakt
-              </h4>
-              <p class="pb-6 text-sm text-gray-600 sm:text-base">
-                Z chęcią odpowiemy na Twoje pytania
-              </p>
-            </div>
+            <form @submit.prevent="handleContactFormSubmit">
+              <div class="text-center md:text-left">
+                <h4
+                  class="text-[24px] font-bold leading-tight text-gray-800 md:text-[28px]"
+                >
+                  Kontakt
+                </h4>
+                <p class="pb-6 text-sm text-gray-600 sm:text-base">
+                  Z chęcią odpowiemy na Twoje pytania
+                </p>
+              </div>
 
-            <div class="mb-2">
-              <label for="name" class="text-left text-sm text-gray-600"
-                >Imię i nazwisko</label
-              >
-              <div>
+              <div class="mb-2">
+                <label for="name" class="text-left text-sm text-gray-600"
+                  >Imię i nazwisko</label
+                >
+                <div>
+                  <input
+                    class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
+                    type="text"
+                    name="name"
+                    id="name"
+                    v-model="contactForm.name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <label for="email" class="text-left text-sm text-gray-600"
+                  >Adres email</label
+                >
+                <div>
+                  <input
+                    class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
+                    type="email"
+                    name="email"
+                    id="email"
+                    v-model="contactForm.email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <label for="message" class="text-left text-sm text-gray-600"
+                  >Treść wiadomości</label
+                >
+                <div>
+                  <textarea
+                    class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
+                    type="text"
+                    name="message"
+                    id="message"
+                    rows="6"
+                    v-model="contactForm.message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="mb-4 flex items-center">
                 <input
-                  class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
-                  type="text"
-                  name="name"
-                  id="name"
+                  class="h-4 w-4 cursor-pointer rounded border-gray-300 bg-gray-100 text-blue-600 focus:outline-none"
+                  type="checkbox"
+                  name="permission"
+                  id="permission"
+                  required
                 />
+                <label
+                  for="permission"
+                  class="ml-2 cursor-pointer text-[12px] font-medium text-gray-600"
+                  ><strong
+                    >Wyrażam zgodę na przetwarzanie danych osobowych</strong
+                  >
+                  zgodnie z ustawą o ochronie danych osobowych w związku
+                  wysłaniem zapytania przez formularz kontaktowy. Podanie danych
+                  jest dobrowolne, ale niezbędne do przetworzenia zapytania.
+                  Zostałem poinformowany, że przysługuje mi prawo dostępu do
+                  swoich danych, możliwości ich poprawiania, żadanie
+                  zaprzestania ich przetwarzania. Administratorem danych
+                  osobowych jest LAMPAR S.J. z siedzibą przy ulicy Andrutowej 3h
+                  w Warszawie.</label
+                >
               </div>
-            </div>
 
-            <div class="mb-2">
-              <label for="email" class="text-left text-sm text-gray-600"
-                >Adres email</label
+              <div
+                class="g-recaptcha mb-6 overflow-auto"
+                data-sitekey="6LccYDQkAAAAACgAh9TlKCkn2L_OnwZg7up7AAnd"
+              ></div>
+
+              <div
+                class="flex flex-col items-center justify-center md:flex-row md:justify-start"
               >
-              <div>
-                <input
-                  class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
-                  type="email"
-                  name="email"
-                  id="email"
-                />
+                <div>
+                  <button
+                    type="submit"
+                    class="rounded bg-gray-600 py-2 px-4 font-bold text-white focus:bg-gray-800 focus:outline-none"
+                    :disabled="sendingMessage"
+                  >
+                    Wyślij
+                  </button>
+                </div>
+                <Transition>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="m-2 h-6 w-6 animate-spin md:inline-block"
+                    v-if="sendingMessage"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                    />
+                  </svg>
+                </Transition>
               </div>
-            </div>
-
-            <div class="mb-2">
-              <label for="message" class="text-left text-sm text-gray-600"
-                >Treść wiadomości</label
+            </form>
+            <Transition>
+              <div
+                v-if="messageSent"
+                class="mt-2 text-center font-bold text-green-700 md:text-left"
               >
-              <div>
-                <textarea
-                  class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
-                  type="text"
-                  name="message"
-                  id="message"
-                  rows="6"
-                ></textarea>
+                Wysłano wiadomość!
               </div>
-            </div>
-
-            <div class="text-center md:text-left">
-              <button
-                class="rounded bg-gray-600 py-2 px-4 font-bold text-white focus:bg-gray-800 focus:outline-none"
+            </Transition>
+            <Transition>
+              <div
+                v-if="recaptchaError"
+                class="mt-2 text-center font-bold text-red-700 md:text-left"
               >
-                Wyślij
-              </button>
-            </div>
+                Potwierdź że nie jesteś robotem.
+              </div>
+            </Transition>
+            <Transition>
+              <div
+                v-if="messageSendingError"
+                class="mt-2 text-center font-bold text-red-700 md:text-left"
+              >
+                Wystąpił błąd. Spróbuj ponownie później lub skontaktuj się z
+                nami bezpośrednio drogą mailową lub telefoniczną.
+              </div>
+            </Transition>
           </div>
           <div class="col-span-2">
             <iframe
@@ -636,4 +722,70 @@
   </main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue";
+const sendingMessage = ref(false);
+const messageSent = ref(false);
+const messageSendingError = ref(false);
+const recaptchaError = ref(false);
+
+const contactForm = ref({
+  name: "",
+  email: "",
+  message: "",
+});
+
+const handleContactFormSubmit = async () => {
+  const recaptchaResponse = await grecaptcha.getResponse();
+
+  if (!recaptchaResponse) {
+    recaptchaError.value = true;
+    setTimeout(() => {
+      recaptchaError.value = false;
+    }, 5000);
+
+    return;
+  }
+
+  sendingMessage.value = true;
+
+  try {
+    await $fetch("/api/sendMail", {
+      method: "POST",
+      body: JSON.stringify({
+        name: contactForm.value.name,
+        email: contactForm.value.email,
+        message: contactForm.value.message,
+      }),
+    });
+
+    messageSent.value = true;
+    sendingMessage.value = false;
+    contactForm.value = {
+      name: "",
+      email: "",
+      message: "",
+    };
+  } catch (error) {
+    sendingMessage.value = false;
+    messageSendingError.value = true;
+  }
+
+  setTimeout(() => {
+    messageSent.value = false;
+    messageSendingError.value = false;
+  }, 10000);
+};
+</script>
+
+<style>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
