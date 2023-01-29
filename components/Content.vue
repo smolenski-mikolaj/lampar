@@ -227,9 +227,78 @@
       />
     </section>
     <section
-      class="relative flex justify-center px-10 pt-16 pb-24 text-gray-800 md:pb-40 2xl:pb-52"
+      class="relative flex justify-center px-10 pt-24 pb-24 text-gray-800 md:pb-40 2xl:pb-52"
     >
-      <Frame class="flex flex-col items-center">
+      <div class="flex flex-col items-center">
+        <div>
+          <h4
+            v-animate-on-scroll
+            class="mb-4 text-[24px] font-bold md:text-[28px]"
+          >
+            Producenci sprzętu
+          </h4>
+        </div>
+        <div
+          v-animate-on-scroll
+          class="mb-10 flex flex-wrap justify-center text-gray-400"
+        >
+          <img
+            src="~/assets/img/partners/signify.svg"
+            class="my-2 mx-4 h-5"
+            alt="Philips Signify"
+          />
+          <img
+            src="~/assets/img/partners/osram.svg"
+            class="my-2 mx-4 h-5"
+            alt="Osram Ledvance"
+          />
+          <img
+            src="~/assets/img/partners/bega.svg"
+            class="mx-4 my-2 h-5"
+            alt="Bega"
+          />
+          <img
+            src="~/assets/img/partners/fagerhult.svg"
+            class="mx-4 my-2 h-5"
+            alt="Fagerhult"
+          />
+          <img
+            src="~/assets/img/partners/modena.svg"
+            class="my-2 mx-4 h-5"
+            alt="Modena"
+          />
+          <img
+            src="~/assets/img/partners/nova.svg"
+            class="my-2 mx-4 h-5"
+            alt="Nova Luce"
+          />
+          <img
+            src="~/assets/img/partners/lutec.svg"
+            class="my-2 mx-4 h-5"
+            alt="Lutec"
+          />
+          <img
+            src="~/assets/img/partners/lucide.svg"
+            class="my-2 mx-4 h-5"
+            alt="Lucide"
+          />
+          <img
+            src="~/assets/img/partners/novodvorski.svg"
+            class="my-2 mx-4 h-5"
+            alt="Novodvorski"
+          />
+          <img
+            src="~/assets/img/partners/labra.svg"
+            class="my-2 mx-4 h-5"
+            alt="Labra"
+          />
+          <img
+            src="~/assets/img/partners/spectra.svg"
+            class="my-2 mx-4 h-5"
+            alt="Spectra"
+          />
+        </div>
+
         <div>
           <h4
             v-animate-on-scroll
@@ -238,32 +307,56 @@
             Osprzęt
           </h4>
         </div>
-        <div
-          v-animate-on-scroll
-          class="flex flex-col justify-center text-gray-400 sm:flex-row"
-        >
-          <img
-            src="~/assets/img/partners/philips.svg"
-            class="my-2 h-5 px-4"
-            alt="Philips"
-          />
-          <img
-            src="~/assets/img/partners/osram.svg"
-            class="my-2 h-5 px-4"
-            alt="Osram"
-          />
-          <img
-            src="~/assets/img/partners/legrand.svg"
-            class="my-2 h-5 px-4"
-            alt="Legrand"
-          />
-          <img
-            src="~/assets/img/partners/hager.svg"
-            class="my-2 h-5 px-4"
-            alt="Hager"
-          />
+
+        <div class="flex flex-wrap justify-center text-sm" v-animate-on-scroll>
+          <ListItem
+            v-animate-on-scroll
+            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
+            ><strong>ELSO</strong></ListItem
+          >
+          <ListItem
+            v-animate-on-scroll
+            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
+            ><strong>HAGER-BERKER</strong></ListItem
+          >
+          <ListItem
+            v-animate-on-scroll
+            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
+            ><strong>GIRA</strong></ListItem
+          >
+          <ListItem
+            v-animate-on-scroll
+            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
+            ><strong>MERTEN</strong></ListItem
+          >
+          <ListItem
+            v-animate-on-scroll
+            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
+            ><strong>EFAPEL</strong></ListItem
+          >
+          <ListItem
+            v-animate-on-scroll
+            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
+            ><strong>LEGRAND</strong></ListItem
+          >
+          <ListItem
+            v-animate-on-scroll
+            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
+            ><strong>OSPEL</strong></ListItem
+          >
+          <ListItem
+            v-animate-on-scroll
+            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
+            ><strong>SCHNEIDER</strong></ListItem
+          >
+          <ListItem
+            v-animate-on-scroll
+            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
+            ><strong>JUNG</strong></ListItem
+          >
         </div>
-      </Frame>
+      </div>
+
       <svg
         class="absolute bottom-0 -z-10 w-full"
         xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +390,7 @@
             <div>
               <div class="flex h-[100px] items-end">
                 <img
-                  class="my-2 max-h-[100px]"
+                  class="my-2 max-h-[100px] grayscale-[50%]"
                   src="~/assets/img/nero.png"
                   alt="Green Caffe Nero"
                 />
@@ -312,7 +405,7 @@
             <div>
               <div class="flex h-[100px] items-end">
                 <img
-                  class="my-2 max-h-[100px]"
+                  class="my-2 max-h-[100px] grayscale-[50%]"
                   src="~/assets/img/wilanow.png"
                   alt="Muzeum Pałacu Króla Jana III"
                 />
@@ -332,7 +425,7 @@
             <div>
               <div class="flex h-[100px] items-end">
                 <img
-                  class="my-2 max-h-[100px]"
+                  class="my-2 max-h-[100px] grayscale-[50%]"
                   src="~/assets/img/mariott.png"
                   alt="Mariott Hotel w Warszawie"
                 />
@@ -348,7 +441,7 @@
             <div>
               <div class="flex h-[100px] items-end">
                 <img
-                  class="my-2 max-h-[100px]"
+                  class="my-2 max-h-[100px] grayscale-[50%]"
                   src="~/assets/img/american-school.png"
                   alt="American School of Warsaw"
                 />
@@ -361,79 +454,227 @@
           </div>
         </div>
 
-        <div class="my-10">
+        <div class="mt-10 mb-20">
           <p class="text-sm" v-animate-on-scroll>a także</p>
           <div
             class="flex flex-wrap justify-center text-sm"
             v-animate-on-scroll
           >
-            <ListItem
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>Nexteam</strong> - Opel Dealer</ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>Nexteam</strong> - Opel Dealer
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>Vector</strong> Doradztwo Biznesowe</ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>Vector</strong> Doradztwo Biznesowe
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>AB</strong> Technologie</ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>AB</strong> Technologie
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>CDBP</strong> Sp. z o.o.</ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>CDBP</strong> Sp. z o.o.
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>Jeronimo Martins</strong> - Biedronka</ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>Jeronimo Martins</strong> - Biedronka
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>New Approach</strong></ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>New Approach</strong>
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>Odyssey</strong> - Dealer Nissan</ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>Odyssey</strong> - Dealer Nissan
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>Winestory</strong></ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>Winestory</strong>
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>Estee Lauder</strong></ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>Estee Lauder</strong>
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>Mountain Warehouse</strong></ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>Mountain Warehouse</strong>
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>Kiehl's</strong></ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>Kiehl's</strong>
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>MAC</strong></ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
-            <ListItem
+              <strong>MAC</strong>
+            </div>
+            <div
               v-animate-on-scroll
-              class="mx-1 my-1 bg-gray-200 py-1.5 sm:py-3"
-              ><strong>Factory Annopol</strong></ListItem
+              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
             >
+              <strong>Factory Annopol</strong>
+            </div>
           </div>
-          <p class="text-sm" v-animate-on-scroll>i wiele innych</p>
+          <p class="text-sm" v-animate-on-scroll>...i wiele innych</p>
+        </div>
+
+        <div>
+          <h4
+            v-animate-on-scroll
+            class="mb-4 text-[24px] font-bold md:text-[28px]"
+          >
+            Wykonawcy
+          </h4>
+        </div>
+
+        <div
+          class="mb-10 flex flex-wrap justify-center text-sm"
+          v-animate-on-scroll
+        >
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>GRODNO</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>ASAJ</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>SEA</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>APUS</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>SEDAN</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>KAREN</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>SCHRACK POLSKA</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>SPECTRA LIGHTING</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>MILTECH LIGHTING</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>AQUALUX</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>TIME CONTROL</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>DIPOL</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>BIALL</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>SCHIMA</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>AB MICRO</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>GÓRAL BUD</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>ROZAM</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>BP PROJECT</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>ALFF</strong>
+          </div>
+          <div
+            v-animate-on-scroll
+            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+          >
+            <strong>ELUM ELEKTROINSTALACJE</strong>
+          </div>
         </div>
       </Frame>
     </section>
@@ -637,7 +878,7 @@
                   wysłaniem zapytania przez formularz kontaktowy. Podanie danych
                   jest dobrowolne, ale niezbędne do przetworzenia zapytania.
                   Zostałem poinformowany, że przysługuje mi prawo dostępu do
-                  swoich danych, możliwości ich poprawiania, żadanie
+                  swoich danych, możliwości ich poprawiania, żądanie
                   zaprzestania ich przetwarzania. Administratorem danych
                   osobowych jest LAMPAR S.J. z siedzibą przy ulicy Andrutowej 3h
                   w Warszawie.</label
@@ -680,31 +921,35 @@
                 </Transition>
               </div>
             </form>
-            <Transition>
-              <div
-                v-if="messageSent"
-                class="mt-2 text-center font-bold text-green-700 md:text-left"
-              >
-                Wysłano wiadomość!
+            <div class="relative h-[100px]">
+              <div class="absolute left-0 top-0 w-full">
+                <Transition>
+                  <div
+                    v-if="messageSent"
+                    class="mt-2 text-center font-bold text-green-700 md:text-left"
+                  >
+                    Wysłano wiadomość!
+                  </div>
+                </Transition>
+                <Transition>
+                  <div
+                    v-if="recaptchaError"
+                    class="mt-2 text-center font-bold text-red-700 md:text-left"
+                  >
+                    Potwierdź że nie jesteś robotem.
+                  </div>
+                </Transition>
+                <Transition>
+                  <div
+                    v-if="messageSendingError"
+                    class="mt-2 text-center font-bold text-red-700 md:text-left"
+                  >
+                    Wystąpił błąd. Spróbuj ponownie później lub skontaktuj się z
+                    nami bezpośrednio drogą mailową lub telefoniczną.
+                  </div>
+                </Transition>
               </div>
-            </Transition>
-            <Transition>
-              <div
-                v-if="recaptchaError"
-                class="mt-2 text-center font-bold text-red-700 md:text-left"
-              >
-                Potwierdź że nie jesteś robotem.
-              </div>
-            </Transition>
-            <Transition>
-              <div
-                v-if="messageSendingError"
-                class="mt-2 text-center font-bold text-red-700 md:text-left"
-              >
-                Wystąpił błąd. Spróbuj ponownie później lub skontaktuj się z
-                nami bezpośrednio drogą mailową lub telefoniczną.
-              </div>
-            </Transition>
+            </div>
           </div>
           <div class="col-span-2">
             <iframe
@@ -736,6 +981,7 @@ const contactForm = ref({
 });
 
 const handleContactFormSubmit = async () => {
+  // @ts-ignore
   const recaptchaResponse = await grecaptcha.getResponse();
 
   if (!recaptchaResponse) {
