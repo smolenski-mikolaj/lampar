@@ -1,7 +1,7 @@
 <template>
   <div class="rounded-xl px-5">
     <div class="flex items-center">
-      <div class="w-[40px] text-gray-800">
+      <div v-if="icon" class="w-[40px] text-gray-800">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -21,3 +21,12 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+defineProps({
+  icon: {
+    type: Boolean,
+    default: true,
+  },
+});
+</script>

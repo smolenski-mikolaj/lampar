@@ -160,7 +160,7 @@
         alt="żarówka dekoracyjna"
       />
     </section>
-    <section class="relative flex justify-center px-10 pt-12" id="offer">
+    <section class="relative my-12 flex justify-center px-10 pt-12" id="offer">
       <Frame>
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
           <div class="relative">
@@ -176,11 +176,9 @@
                 v-animate-on-scroll
                 class="pb-4 text-center text-gray-600 md:text-left"
               >
-                Nasza działalność obejmuje współpracę ze sklepami
-                oświetleniowymi i dekoracyjnymi w zakresie sprzedaży oświetlenia
-                znanych i cenionych marek europejskich, współpracę z biurami
-                projektowymi i projektantami oraz kompleksową obsługę zamówień
-                inwestycyjnych w zakresie oświetlenia dekoracyjnego.
+                Nasza działalność obejmuje współpracę z biurami projektowymi i
+                projektantami oraz kompleksową obsługę zamówień inwestycyjnych w
+                zakresie oświetlenia dekoracyjnego.
               </p>
             </div>
           </div>
@@ -202,20 +200,6 @@
                 >osprzęt elektroinstalacyjny renomowanych producentów krajowych
                 i zagranicznych</ListItem
               >
-              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
-                >kable i przewody</ListItem
-              >
-              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
-                >listwy i koryta kablowe</ListItem
-              >
-              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
-                >rozdzielnie nn, wyłączniki nadmiarowo-prądowe i
-                różnicowo-prądowe</ListItem
-              >
-              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
-                >gniazda i przewody do instalacji komputerowych i
-                telewizyjnych</ListItem
-              >
             </div>
           </div>
         </div>
@@ -235,7 +219,7 @@
             v-animate-on-scroll
             class="mb-4 text-[24px] font-bold md:text-[28px]"
           >
-            Producenci sprzętu
+            Oprawy oświetleniowe
           </h4>
         </div>
         <div
@@ -311,48 +295,57 @@
         <div class="flex flex-wrap justify-center text-sm" v-animate-on-scroll>
           <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
-            ><strong>ELSO</strong></ListItem
+            :icon="false"
+            class="m-1 bg-gray-100 py-2 text-sm font-semibold"
+            >ELSO</ListItem
           >
           <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
-            ><strong>HAGER-BERKER</strong></ListItem
+            :icon="false"
+            class="m-1 bg-gray-100 py-2 text-sm font-semibold"
+            >HAGER-BERKER</ListItem
           >
           <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
-            ><strong>GIRA</strong></ListItem
+            :icon="false"
+            class="m-1 bg-gray-100 py-2 text-sm font-semibold"
+            >GIRA</ListItem
           >
           <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
-            ><strong>MERTEN</strong></ListItem
+            :icon="false"
+            class="m-1 bg-gray-100 py-2 text-sm font-semibold"
+            >MERTEN</ListItem
           >
           <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
-            ><strong>EFAPEL</strong></ListItem
+            :icon="false"
+            class="m-1 bg-gray-100 py-2 text-sm font-semibold"
+            >EFAPEL</ListItem
           >
           <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
-            ><strong>LEGRAND</strong></ListItem
+            :icon="false"
+            class="m-1 bg-gray-100 py-2 text-sm font-semibold"
+            >LEGRAND</ListItem
           >
           <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
-            ><strong>OSPEL</strong></ListItem
+            :icon="false"
+            class="m-1 bg-gray-100 py-2 text-sm font-semibold"
+            >OSPEL</ListItem
           >
           <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
-            ><strong>SCHNEIDER</strong></ListItem
+            :icon="false"
+            class="m-1 bg-gray-100 py-2 text-sm font-semibold"
+            >SCHNEIDER</ListItem
           >
           <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 bg-gray-100 py-1.5 text-sm sm:py-3"
-            ><strong>JUNG</strong></ListItem
+            :icon="false"
+            class="m-1 bg-gray-100 py-2 text-sm font-semibold"
+            >JUNG</ListItem
           >
         </div>
       </div>
@@ -375,13 +368,24 @@
       />
     </section>
     <section
-      class="flex justify-center bg-gray-100 px-8 pb-12 text-center sm:px-10"
+      class="relative flex justify-center bg-gray-100 px-8 pb-12 text-center sm:px-10 sm:pb-40"
       id="portfolio"
     >
+      <svg
+        class="absolute bottom-0 w-full"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#e5e7eb"
+          fill-opacity="1"
+          d="M0,256L48,245.3C96,235,192,213,288,208C384,203,480,213,576,224C672,235,768,245,864,256C960,267,1056,277,1152,272C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
       <Frame wide>
         <h4
           v-animate-on-scroll
-          class="mb-8 pt-4 text-[24px] font-bold text-gray-800 md:text-[28px]"
+          class="mb-8 text-[24px] font-bold text-gray-800 md:text-[28px]"
         >
           Nasze <span class="text-blue-500">realizacje</span>
         </h4>
@@ -455,91 +459,102 @@
         </div>
 
         <div class="mt-10 mb-20">
-          <p class="text-sm" v-animate-on-scroll>a także</p>
           <div
             class="flex flex-wrap justify-center text-sm"
             v-animate-on-scroll
           >
-            <div
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>Nexteam</strong> - Opel Dealer
-            </div>
-            <div
+              <span class="font-semibold">Nexteam</span> - Opel Dealer
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>Vector</strong> Doradztwo Biznesowe
-            </div>
-            <div
+              <span class="font-semibold">Vector</span> Doradztwo Biznesowe
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>AB</strong> Technologie
-            </div>
-            <div
+              <span class="font-semibold">AB</span> Technologie
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>CDBP</strong> Sp. z o.o.
-            </div>
-            <div
+              <span class="font-semibold">CDBP</span> Sp. z o.o.
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>Jeronimo Martins</strong> - Biedronka
-            </div>
-            <div
+              <span class="font-semibold">Jeronimo Martins</span> - Biedronka
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>New Approach</strong>
-            </div>
-            <div
+              <span class="font-semibold">New Approach</span>
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>Odyssey</strong> - Dealer Nissan
-            </div>
-            <div
+              <span class="font-semibold">Odyssey</span> - Dealer Nissan
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>Winestory</strong>
-            </div>
-            <div
+              <span class="font-semibold">Winestory</span>
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>Estee Lauder</strong>
-            </div>
-            <div
+              <span class="font-semibold">Estee Lauder</span>
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>Mountain Warehouse</strong>
-            </div>
-            <div
+              <span class="font-semibold">Mountain Warehouse</span>
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>Kiehl's</strong>
-            </div>
-            <div
+              <span class="font-semibold">Kiehl's</span>
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>MAC</strong>
-            </div>
-            <div
+              <span class="font-semibold">MAC</span>
+            </ListItem>
+            <ListItem
               v-animate-on-scroll
-              class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2"
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm"
             >
-              <strong>Factory Annopol</strong>
-            </div>
+              <span class="font-semibold">Factory Annopol</span>
+            </ListItem>
           </div>
-          <p class="text-sm" v-animate-on-scroll>...i wiele innych</p>
         </div>
 
         <div>
@@ -552,250 +567,153 @@
         </div>
 
         <div
-          class="mb-10 flex flex-wrap justify-center text-sm"
+          class="relative mb-10 flex flex-wrap justify-center text-sm"
           v-animate-on-scroll
         >
-          <div
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>GRODNO</strong>
-          </div>
-          <div
+            GRODNO
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>ASAJ</strong>
-          </div>
-          <div
+            ASAJ
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>SEA</strong>
-          </div>
-          <div
+            SEA
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>APUS</strong>
-          </div>
-          <div
+            APUS
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>SEDAN</strong>
-          </div>
-          <div
+            SEDAN
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>KAREN</strong>
-          </div>
-          <div
+            KAREN
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>SCHRACK POLSKA</strong>
-          </div>
-          <div
+            SCHRACK POLSKA
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>SPECTRA LIGHTING</strong>
-          </div>
-          <div
+            SPECTRA LIGHTING
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>MILTECH LIGHTING</strong>
-          </div>
-          <div
+            MILTECH LIGHTING
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>AQUALUX</strong>
-          </div>
-          <div
+            AQUALUX
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>TIME CONTROL</strong>
-          </div>
-          <div
+            TIME CONTROL
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>DIPOL</strong>
-          </div>
-          <div
+            DIPOL
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>BIALL</strong>
-          </div>
-          <div
+            BIALL
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>SCHIMA</strong>
-          </div>
-          <div
+            SCHIMA
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>AB MICRO</strong>
-          </div>
-          <div
+            AB MICRO
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>GÓRAL BUD</strong>
-          </div>
-          <div
+            GÓRAL BUD
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>ROZAM</strong>
-          </div>
-          <div
+            ROZAM
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>BP PROJECT</strong>
-          </div>
-          <div
+            BP PROJECT
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>ALFF</strong>
-          </div>
-          <div
+            ALFF
+          </ListItem>
+          <ListItem
             v-animate-on-scroll
-            class="mx-1 my-1 rounded-xl border border-gray-300 bg-gray-200 p-2 text-sm text-gray-700"
+            :icon="false"
+            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
           >
-            <strong>ELUM ELEKTROINSTALACJE</strong>
-          </div>
+            ELUM ELEKTROINSTALACJE
+          </ListItem>
         </div>
       </Frame>
     </section>
-    <!-- <section class="flex justify-center bg-gray-100 py-12 pt-4 text-center">
-      <Frame>
-        <h4
-          v-animate-on-scroll
-          class="text-[24px] font-bold text-gray-800 md:text-[28px]"
-        >
-          Jak pracujemy?
-        </h4>
-        <div class="flex justify-center">
-          <div v-animate-on-scroll class="grid grid-cols-3 gap-4">
-            <div
-              class="relative my-3 flex items-center justify-center p-2 sm:p-5"
-            >
-              <div class="text-center text-gray-600">
-                <div class="mb-2 flex justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.8"
-                    stroke="currentColor"
-                    class="h-10 w-10"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                    />
-                  </svg>
-                </div>
-                <div class="text-sm sm:text-base">Analizujemy potrzeby</div>
-              </div>
-              <div
-                class="absolute -right-5 top-[20%] rotate-[8deg] text-blue-500 sm:top-[30%]"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              class="relative mt-4 mb-2 flex items-center justify-center p-2 sm:p-5"
-            >
-              <div class="text-center text-gray-600">
-                <div class="mb-2 flex justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-10 w-10"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-                    />
-                  </svg>
-                </div>
-                <div class="text-sm sm:text-base">Tworzymy kosztorys</div>
-              </div>
-              <div
-                class="absolute -right-5 top-[17%] -rotate-[8deg] text-blue-500 sm:top-[28%]"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="my-3 flex items-center justify-center p-2 sm:p-5">
-              <div class="text-center text-gray-600">
-                <div class="mb-2 flex justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-10 w-10"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
-                    />
-                  </svg>
-                </div>
-                <div class="text-sm sm:text-base">Wykonujemy instalację</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Frame>
-    </section> -->
-    <section class="flex justify-center bg-gray-100 px-10 pb-10" id="contact">
+    <section class="flex justify-center bg-gray-200 px-10 pb-10" id="contact">
       <Frame wide class="rounded-xl p-5 text-gray-800">
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-12">
           <div class="mb-20 md:mb-0">
