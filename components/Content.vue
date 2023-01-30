@@ -14,7 +14,7 @@
             >
               <h1
                 v-animate-on-scroll
-                class="text-[28px] font-extrabold leading-8 sm:text-[36px] sm:leading-9"
+                class="text-[28px] font-bold leading-8 sm:text-[36px] sm:leading-9"
               >
                 <span class="text-blue-300">Oświetlimy</span>
                 <br />
