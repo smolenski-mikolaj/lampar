@@ -914,7 +914,9 @@ const messageSent = ref(false);
 const messageSendingError = ref(false);
 const recaptchaError = ref(false);
 
-const cookiesAccepted = useCookie("cookiesAccepted");
+const cookiesAccepted = useCookie("cookiesAccepted", {
+  maxAge: 60 * 60 * 24 * 400,
+});
 
 const contactForm = ref({
   name: "",
