@@ -178,7 +178,7 @@
               >
                 Nasza działalność obejmuje współpracę z biurami projektowymi i
                 projektantami oraz kompleksową obsługę zamówień inwestycyjnych w
-                zakresie oświetlenia dekoracyjnego.
+                zakresie oświetlenia dekoracyjnego i użytkowego.
               </p>
             </div>
           </div>
@@ -458,7 +458,7 @@
           </div>
         </div>
 
-        <div class="mt-10 mb-20">
+        <div class="mt-4 mb-20">
           <div
             class="flex flex-wrap justify-center text-sm"
             v-animate-on-scroll
@@ -562,7 +562,7 @@
             v-animate-on-scroll
             class="mb-4 text-[24px] font-bold md:text-[28px]"
           >
-            Wykonawcy
+            Partnerzy
           </h4>
         </div>
 
@@ -883,6 +883,28 @@
       </Frame>
     </section>
   </main>
+
+  <Transition mode="out-in">
+    <aside
+      v-if="Boolean(cookiesAccepted) !== true"
+      class="fixed bottom-0 left-0 flex w-full max-w-[400px] justify-start text-[12px]"
+    >
+      <div class="mx-4 my-4 rounded bg-gray-100 px-6 py-2 shadow-lg">
+        Wykorzystujemy pliki cookies w celu prawidłowego działania strony,
+        korzystania z narzędzi analitycznych i marketingowych oraz zapewniania
+        funkcji społecznościowych. Pozostając na stronie zgadzasz się na ich
+        stosowanie.
+        <div class="flex justify-end">
+          <button
+            @click="cookiesAccepted = 'true'"
+            class="rounded bg-gray-300 px-2 py-1 font-bold"
+          >
+            OK
+          </button>
+        </div>
+      </div>
+    </aside>
+  </Transition>
 </template>
 
 <script setup lang="ts">
@@ -891,6 +913,8 @@ const sendingMessage = ref(false);
 const messageSent = ref(false);
 const messageSendingError = ref(false);
 const recaptchaError = ref(false);
+
+const cookiesAccepted = useCookie("cookiesAccepted");
 
 const contactForm = ref({
   name: "",

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "LAMPAR - hurtownia sprzętu oświetleniowego",
+      title: "LAMPAR - Hurtownia Sprzętu Oświetleniowego",
       meta: [
         {
           name: "description",

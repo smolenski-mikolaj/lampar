@@ -3,7 +3,7 @@
     <Frame class="flex items-center justify-between">
       <div class="flex h-full items-center">
         <img
-          class="h-[35px] lg:h-[45px]"
+          class="h-[25px] lg:h-[35px]"
           src="~/assets/img/logo.svg"
           alt="logo"
         />
