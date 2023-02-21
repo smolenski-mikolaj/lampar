@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="overflow-x-hidden">
     <section
       class="relative bg-[url('/img/interior.jpg')] bg-cover bg-right-top"
     >
@@ -13,14 +13,13 @@
               class="flex flex-col justify-center pt-40 pb-6 text-center sm:w-1/2 sm:pt-24 sm:pb-64 sm:text-left lg:w-1/3 3xl:pb-80"
             >
               <h1
-                v-animate-on-scroll
                 class="text-[28px] font-bold leading-8 sm:text-[36px] sm:leading-9"
               >
                 <span class="text-blue-300">Oświetlimy</span>
                 <br />
                 <span class="text-gray-100">każdy obiekt</span>
               </h1>
-              <h2 v-animate-on-scroll class="mt-4 pb-16 text-gray-200">
+              <h2 class="mt-4 pb-16 text-gray-200">
                 Jesteśmy dystrybutorem oświetlenia profesjonalnego,
                 dekoracyjnego i awaryjnego z wieloletnim doświadczeniem na rynku
                 polskim.
@@ -48,19 +47,24 @@
       <Frame id="about" class="pt-6">
         <div>
           <div class="text-center text-gray-800">
-            <h4
-              v-animate-on-scroll
-              class="mb-2 text-[24px] font-bold leading-6 text-gray-800 md:text-[28px] md:leading-8"
-            >
-              Kompleksowo realizujemy inwestycje
-            </h4>
-            <p
-              v-animate-on-scroll
-              class="px-4 pb-4 text-center text-gray-600 md:px-24 xl:px-48"
-            >
-              Oświetlamy obiekty użyteczności publicznej - biura, szkoły, centra
-              handlowe, hotele, przychodnie, gabinety, restauracje, sklepy.
-            </p>
+            <div class="mb-2">
+              <h4
+                v-animate-on-scroll="'bottom'"
+                class="text-[24px] font-bold leading-6 text-gray-800 md:text-[28px] md:leading-8"
+              >
+                Kompleksowo realizujemy inwestycje
+              </h4>
+            </div>
+            <div class="px-4 pb-4 md:px-24 xl:px-48">
+              <p
+                v-animate-on-scroll="'bottom'"
+                class="text-center text-gray-600"
+              >
+                Oświetlamy obiekty użyteczności publicznej - biura, szkoły,
+                centra handlowe, hotele, przychodnie, gabinety, restauracje,
+                sklepy.
+              </p>
+            </div>
           </div>
           <div class="flex justify-center">
             <div class="grid grid-cols-3 gap-2">
@@ -166,14 +170,14 @@
           <div class="relative">
             <div class="md:sticky md:top-6 md:mt-4">
               <h4
-                v-animate-on-scroll
+                v-animate-on-scroll="'bottom-left'"
                 class="px-4 pb-4 text-center text-[24px] font-bold leading-6 text-gray-800 sm:px-0 md:text-left md:text-[28px] md:leading-8"
               >
                 Oferujemy szeroki zakres
                 <span class="text-blue-500">usług</span>
               </h4>
               <p
-                v-animate-on-scroll
+                v-animate-on-scroll="'bottom-left'"
                 class="pb-4 text-center text-gray-600 md:text-left"
               >
                 Nasza działalność obejmuje współpracę z biurami projektowymi i
@@ -183,20 +187,21 @@
             </div>
           </div>
           <div class="col-span-2 flex justify-center md:block">
-            <div class="max-w-[400px] md:max-w-none">
-              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
+            <div
+              class="max-w-[400px] md:max-w-none"
+              v-animate-on-scroll="'bottom-right'"
+            >
+              <ListItem class="my-2 bg-gray-100 py-3"
                 >systemy oświetlenia wewnętrznego i zewnętrznego</ListItem
               >
-              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3"
                 >systemy oświetlenia awaryjnego</ListItem
               >
-              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
-                >źródła światła</ListItem
-              >
-              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3">źródła światła</ListItem>
+              <ListItem class="my-2 bg-gray-100 py-3"
                 >projekty oświetlenia</ListItem
               >
-              <ListItem class="my-2 bg-gray-100 py-3" v-animate-on-scroll
+              <ListItem class="my-2 bg-gray-100 py-3"
                 >osprzęt elektroinstalacyjny renomowanych producentów krajowych
                 i zagranicznych</ListItem
               >
@@ -214,135 +219,131 @@
       class="relative flex justify-center px-10 pt-24 pb-24 text-gray-800 md:pb-40 2xl:pb-52"
     >
       <div class="flex flex-col items-center">
-        <div>
+        <div class="mb-4">
           <h4
-            v-animate-on-scroll
-            class="mb-4 text-[24px] font-bold md:text-[28px]"
+            v-animate-on-scroll="'bottom'"
+            class="text-[24px] font-bold md:text-[28px]"
           >
             Oprawy oświetleniowe
           </h4>
         </div>
-        <div
-          v-animate-on-scroll
-          class="mb-10 flex flex-wrap justify-center text-gray-400"
-        >
-          <img
-            src="~/assets/img/partners/signify.svg"
-            class="my-2 mx-4 h-5"
-            alt="Philips Signify"
-          />
-          <img
-            src="~/assets/img/partners/osram.svg"
-            class="my-2 mx-4 h-5"
-            alt="Osram Ledvance"
-          />
-          <img
-            src="~/assets/img/partners/bega.svg"
-            class="mx-4 my-2 h-5"
-            alt="Bega"
-          />
-          <img
-            src="~/assets/img/partners/fagerhult.svg"
-            class="mx-4 my-2 h-5"
-            alt="Fagerhult"
-          />
-          <img
-            src="~/assets/img/partners/modena.svg"
-            class="my-2 mx-4 h-5"
-            alt="Modena"
-          />
-          <img
-            src="~/assets/img/partners/nova.svg"
-            class="my-2 mx-4 h-5"
-            alt="Nova Luce"
-          />
-          <img
-            src="~/assets/img/partners/lutec.svg"
-            class="my-2 mx-4 h-5"
-            alt="Lutec"
-          />
-          <img
-            src="~/assets/img/partners/lucide.svg"
-            class="my-2 mx-4 h-5"
-            alt="Lucide"
-          />
-          <img
-            src="~/assets/img/partners/novodvorski.svg"
-            class="my-2 mx-4 h-5"
-            alt="Novodvorski"
-          />
-          <img
-            src="~/assets/img/partners/labra.svg"
-            class="my-2 mx-4 h-5"
-            alt="Labra"
-          />
-          <img
-            src="~/assets/img/partners/spectra.svg"
-            class="my-2 mx-4 h-5"
-            alt="Spectra"
-          />
+        <div class="mb-10">
+          <div
+            v-animate-on-scroll="'bottom'"
+            class="flex flex-wrap justify-center text-gray-400"
+          >
+            <img
+              src="~/assets/img/partners/signify.svg"
+              class="my-2 mx-4 h-5"
+              alt="Philips Signify"
+            />
+            <img
+              src="~/assets/img/partners/osram.svg"
+              class="my-2 mx-4 h-5"
+              alt="Osram Ledvance"
+            />
+            <img
+              src="~/assets/img/partners/bega.svg"
+              class="mx-4 my-2 h-5"
+              alt="Bega"
+            />
+            <img
+              src="~/assets/img/partners/fagerhult.svg"
+              class="mx-4 my-2 h-5"
+              alt="Fagerhult"
+            />
+            <img
+              src="~/assets/img/partners/modena.svg"
+              class="my-2 mx-4 h-5"
+              alt="Modena"
+            />
+            <img
+              src="~/assets/img/partners/nova.svg"
+              class="my-2 mx-4 h-5"
+              alt="Nova Luce"
+            />
+            <img
+              src="~/assets/img/partners/lutec.svg"
+              class="my-2 mx-4 h-5"
+              alt="Lutec"
+            />
+            <img
+              src="~/assets/img/partners/lucide.svg"
+              class="my-2 mx-4 h-5"
+              alt="Lucide"
+            />
+            <img
+              src="~/assets/img/partners/novodvorski.svg"
+              class="my-2 mx-4 h-5"
+              alt="Novodvorski"
+            />
+            <img
+              src="~/assets/img/partners/labra.svg"
+              class="my-2 mx-4 h-5"
+              alt="Labra"
+            />
+            <img
+              src="~/assets/img/partners/spectra.svg"
+              class="my-2 mx-4 h-5"
+              alt="Spectra"
+            />
+          </div>
         </div>
 
-        <div>
+        <div class="mb-4">
           <h4
-            v-animate-on-scroll
-            class="mb-4 text-[24px] font-bold md:text-[28px]"
+            v-animate-on-scroll="'bottom'"
+            class="text-[24px] font-bold md:text-[28px]"
           >
             Osprzęt
           </h4>
         </div>
 
-        <div class="flex flex-wrap justify-center text-sm" v-animate-on-scroll>
+        <div
+          class="flex flex-wrap justify-center text-sm"
+          v-animate-on-scroll="'bottom'"
+        >
           <ListItem
-            v-animate-on-scroll
             :icon="false"
             class="m-1 bg-gray-100 py-2 text-sm font-semibold"
             >ELSO</ListItem
           >
           <ListItem
-            v-animate-on-scroll
             :icon="false"
             class="m-1 bg-gray-100 py-2 text-sm font-semibold"
             >HAGER-BERKER</ListItem
           >
           <ListItem
-            v-animate-on-scroll
             :icon="false"
             class="m-1 bg-gray-100 py-2 text-sm font-semibold"
             >GIRA</ListItem
           >
           <ListItem
-            v-animate-on-scroll
             :icon="false"
             class="m-1 bg-gray-100 py-2 text-sm font-semibold"
             >MERTEN</ListItem
           >
           <ListItem
-            v-animate-on-scroll
             :icon="false"
             class="m-1 bg-gray-100 py-2 text-sm font-semibold"
             >EFAPEL</ListItem
           >
           <ListItem
-            v-animate-on-scroll
             :icon="false"
             class="m-1 bg-gray-100 py-2 text-sm font-semibold"
             >LEGRAND</ListItem
           >
           <ListItem
-            v-animate-on-scroll
             :icon="false"
             class="m-1 bg-gray-100 py-2 text-sm font-semibold"
             >OSPEL</ListItem
           >
           <ListItem
-            v-animate-on-scroll
             :icon="false"
             class="m-1 bg-gray-100 py-2 text-sm font-semibold"
             >SCHNEIDER</ListItem
           >
           <ListItem
-            v-animate-on-scroll
             :icon="false"
             class="m-1 bg-gray-100 py-2 text-sm font-semibold"
             >JUNG</ListItem
@@ -383,14 +384,16 @@
         ></path>
       </svg>
       <Frame wide>
-        <h4
-          v-animate-on-scroll
-          class="mb-8 text-[24px] font-bold text-gray-800 md:text-[28px]"
-        >
-          Nasze <span class="text-blue-500">realizacje</span>
-        </h4>
+        <div class="mb-8">
+          <h4
+            v-animate-on-scroll="'bottom'"
+            class="text-[24px] font-bold text-gray-800 md:text-[28px]"
+          >
+            Nasze <span class="text-blue-500">realizacje</span>
+          </h4>
+        </div>
         <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <div class="flex justify-center" v-animate-on-scroll>
+          <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
               <div class="flex h-[100px] items-end">
                 <img
@@ -405,7 +408,7 @@
             </div>
           </div>
 
-          <div class="flex justify-center" v-animate-on-scroll>
+          <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
               <div class="flex h-[100px] items-end">
                 <img
@@ -425,7 +428,7 @@
             </div>
           </div>
 
-          <div class="flex justify-center" v-animate-on-scroll>
+          <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
               <div class="flex h-[100px] items-end">
                 <img
@@ -441,7 +444,7 @@
             </div>
           </div>
 
-          <div class="flex justify-center" v-animate-on-scroll>
+          <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
               <div class="flex h-[100px] items-end">
                 <img
@@ -461,255 +464,185 @@
         <div class="mt-4 mb-20">
           <div
             class="flex flex-wrap justify-center text-sm"
-            v-animate-on-scroll
+            v-animate-on-scroll="'bottom'"
           >
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">Nexteam</span> - Opel Dealer
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">Vector</span> Doradztwo Biznesowe
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">AB</span> Technologie
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">CDBP</span> Sp. z o.o.
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">Jeronimo Martins</span> - Biedronka
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">New Approach</span>
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">Odyssey</span> - Dealer Nissan
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">Winestory</span>
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">Estee Lauder</span>
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">Mountain Warehouse</span>
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">Kiehl's</span>
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">MAC</span>
             </ListItem>
-            <ListItem
-              v-animate-on-scroll
-              :icon="false"
-              class="m-1 bg-gray-200 py-2 text-sm"
-            >
+            <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">Factory Annopol</span>
             </ListItem>
           </div>
         </div>
 
-        <div>
+        <div class="mb-4">
           <h4
-            v-animate-on-scroll
-            class="mb-4 text-[24px] font-bold md:text-[28px]"
+            v-animate-on-scroll="'bottom'"
+            class="text-[24px] font-bold md:text-[28px]"
           >
             Partnerzy
           </h4>
         </div>
 
-        <div
-          class="relative mb-10 flex flex-wrap justify-center text-sm"
-          v-animate-on-scroll
-        >
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+        <div class="mb-10">
+          <div
+            class="relative flex flex-wrap justify-center text-sm"
+            v-animate-on-scroll="'bottom'"
           >
-            GRODNO
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            ASAJ
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            SEA
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            APUS
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            SEDAN
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            KAREN
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            SCHRACK POLSKA
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            SPECTRA LIGHTING
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            MILTECH LIGHTING
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            AQUALUX
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            TIME CONTROL
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            DIPOL
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            BIALL
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            SCHIMA
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            AB MICRO
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            GÓRAL BUD
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            ROZAM
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            BP PROJECT
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            ALFF
-          </ListItem>
-          <ListItem
-            v-animate-on-scroll
-            :icon="false"
-            class="m-1 bg-gray-200 py-2 text-sm font-semibold"
-          >
-            ELUM ELEKTROINSTALACJE
-          </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              GRODNO
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              ASAJ
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              SEA
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              APUS
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              SEDAN
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              KAREN
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              SCHRACK POLSKA
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              SPECTRA LIGHTING
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              MILTECH LIGHTING
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              AQUALUX
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              TIME CONTROL
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              DIPOL
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              BIALL
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              SCHIMA
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              AB MICRO
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              GÓRAL BUD
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              ROZAM
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              BP PROJECT
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              ALFF
+            </ListItem>
+            <ListItem
+              :icon="false"
+              class="m-1 bg-gray-200 py-2 text-sm font-semibold"
+            >
+              ELUM ELEKTROINSTALACJE
+            </ListItem>
+          </div>
         </div>
       </Frame>
     </section>
