@@ -40,6 +40,20 @@ const createRelativeWrapper = (element: HTMLElement) => {
   }
 };
 
+const updateWrapperSize = (element: HTMLElement, wrapper?: HTMLDivElement) => {
+  if (wrapper) {
+    wrapper.style.width = "auto";
+    wrapper.style.height = "auto";
+    element.style.position = "relative";
+
+    setTimeout(() => {
+      wrapper.style.width = `${element.getBoundingClientRect().width}px`;
+      wrapper.style.height = `${element.getBoundingClientRect().height}px`;
+      element.style.position = "absolute";
+    }, 100);
+  }
+};
+
 const setMoveAnimation = (element: HTMLElement, direction: string) => {
   element.style.transition = "opacity 1s ease-out 0.2s";
 
@@ -83,6 +97,10 @@ export default defineNuxtPlugin((nuxtApp) => {
       if (binding.value) {
         const newWrapper = createRelativeWrapper(element);
         const newElement = newWrapper?.children[0] as HTMLElement;
+
+        window.addEventListener("resize", () =>
+          updateWrapperSize(newElement, newWrapper)
+        );
 
         setMoveAnimation(newElement, binding.value);
         onIntersect(newElement, binding.value, onEnter, onExit, false);

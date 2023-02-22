@@ -168,7 +168,7 @@
       <Frame>
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
           <div class="relative">
-            <div class="md:sticky md:top-6 md:mt-4">
+            <div class="md:top-6 md:mt-4">
               <h4
                 v-animate-on-scroll="'bottom-left'"
                 class="px-4 pb-4 text-center text-[24px] font-bold leading-6 text-gray-800 sm:px-0 md:text-left md:text-[28px] md:leading-8"
@@ -651,7 +651,10 @@
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-12">
           <div class="mb-20 md:mb-0">
             <form @submit.prevent="handleContactFormSubmit">
-              <div class="text-center md:text-left">
+              <div
+                class="text-center md:text-left"
+                v-animate-on-scroll="'bottom'"
+              >
                 <h4
                   class="text-[24px] font-bold leading-tight text-gray-800 md:text-[28px]"
                 >
@@ -663,77 +666,85 @@
               </div>
 
               <div class="mb-2">
-                <label for="name" class="text-left text-sm text-gray-600"
-                  >Imię i nazwisko</label
-                >
-                <div>
-                  <input
-                    class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
-                    type="text"
-                    name="name"
-                    id="name"
-                    v-model="contactForm.name"
-                    required
-                  />
+                <div v-animate-on-scroll>
+                  <label for="name" class="text-left text-sm text-gray-600"
+                    >Imię i nazwisko</label
+                  >
+                  <div>
+                    <input
+                      class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
+                      type="text"
+                      name="name"
+                      id="name"
+                      v-model="contactForm.name"
+                      required
+                    />
+                  </div>
                 </div>
               </div>
 
               <div class="mb-2">
-                <label for="email" class="text-left text-sm text-gray-600"
-                  >Adres email</label
-                >
-                <div>
-                  <input
-                    class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
-                    type="email"
-                    name="email"
-                    id="email"
-                    v-model="contactForm.email"
-                    required
-                  />
+                <div v-animate-on-scroll>
+                  <label for="email" class="text-left text-sm text-gray-600"
+                    >Adres email</label
+                  >
+                  <div>
+                    <input
+                      class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
+                      type="email"
+                      name="email"
+                      id="email"
+                      v-model="contactForm.email"
+                      required
+                    />
+                  </div>
                 </div>
               </div>
 
               <div class="mb-2">
-                <label for="message" class="text-left text-sm text-gray-600"
-                  >Treść wiadomości</label
-                >
-                <div>
-                  <textarea
-                    class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
-                    type="text"
-                    name="message"
-                    id="message"
-                    rows="6"
-                    v-model="contactForm.message"
-                    required
-                  ></textarea>
+                <div v-animate-on-scroll>
+                  <label for="message" class="text-left text-sm text-gray-600"
+                    >Treść wiadomości</label
+                  >
+                  <div>
+                    <textarea
+                      class="w-full rounded-md border bg-white p-2 focus:border-gray-300 focus:outline-none"
+                      type="text"
+                      name="message"
+                      id="message"
+                      rows="6"
+                      v-model="contactForm.message"
+                      required
+                    ></textarea>
+                  </div>
                 </div>
               </div>
 
               <div class="mb-4 flex items-center">
-                <input
-                  class="h-4 w-4 cursor-pointer rounded border-gray-300 bg-gray-100 text-blue-600 focus:outline-none"
-                  type="checkbox"
-                  name="permission"
-                  id="permission"
-                  required
-                />
-                <label
-                  for="permission"
-                  class="ml-2 cursor-pointer text-[12px] font-medium text-gray-600"
-                  ><strong
-                    >Wyrażam zgodę na przetwarzanie danych osobowych</strong
+                <div v-animate-on-scroll>
+                  <input
+                    class="h-4 w-4 cursor-pointer rounded border-gray-300 bg-gray-100 text-blue-600 focus:outline-none"
+                    type="checkbox"
+                    name="permission"
+                    id="permission"
+                    required
+                  />
+                  <label
+                    for="permission"
+                    class="ml-2 cursor-pointer text-[12px] font-medium text-gray-600"
+                    ><strong
+                      >Wyrażam zgodę na przetwarzanie danych osobowych</strong
+                    >
+                    zgodnie z ustawą o ochronie danych osobowych w związku
+                    wysłaniem zapytania przez formularz kontaktowy. Podanie
+                    danych jest dobrowolne, ale niezbędne do przetworzenia
+                    zapytania. Zostałem poinformowany, że przysługuje mi prawo
+                    dostępu do swoich danych, możliwości ich poprawiania,
+                    żądanie zaprzestania ich przetwarzania. Administratorem
+                    danych osobowych jest LAMPAR S.J. z siedzibą przy ulicy
+                    Andrutowej 3h w Warszawie.</label
                   >
-                  zgodnie z ustawą o ochronie danych osobowych w związku
-                  wysłaniem zapytania przez formularz kontaktowy. Podanie danych
-                  jest dobrowolne, ale niezbędne do przetworzenia zapytania.
-                  Zostałem poinformowany, że przysługuje mi prawo dostępu do
-                  swoich danych, możliwości ich poprawiania, żądanie
-                  zaprzestania ich przetwarzania. Administratorem danych
-                  osobowych jest LAMPAR S.J. z siedzibą przy ulicy Andrutowej 3h
-                  w Warszawie.</label
-                >
+                </div>
               </div>
 
               <div
@@ -744,7 +755,7 @@
               <div
                 class="flex flex-col items-center justify-center md:flex-row md:justify-start"
               >
-                <div>
+                <div v-animate-on-scroll>
                   <button
                     type="submit"
                     class="rounded bg-gray-600 py-2 px-4 font-bold text-white focus:bg-gray-800 focus:outline-none"
