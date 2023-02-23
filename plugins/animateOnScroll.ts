@@ -103,10 +103,10 @@ export default defineNuxtPlugin((nuxtApp) => {
         );
 
         setMoveAnimation(newElement, binding.value);
-        onIntersect(newElement, binding.value, onEnter, onExit, false);
+        onIntersect(newElement, binding.value, onEnter, onExit, true);
       } else {
         setMoveAnimation(element, binding.value);
-        onIntersect(element, binding.value, onEnter, onExit, false);
+        onIntersect(element, binding.value, onEnter, onExit, true);
       }
     },
   });

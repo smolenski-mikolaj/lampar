@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-200 px-10 pt-6 pb-4">
-    <div class="flex justify-center pb-6" v-animate-on-scroll="'bottom'">
+    <div class="flex justify-center pb-6" v-animate-on-scroll>
       <div
         class="w-full max-w-[300px] rounded-xl bg-gray-100 py-6 px-10 text-center shadow"
       >
