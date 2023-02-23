@@ -74,5 +74,4 @@ export default defineNuxtConfig({
   nitro: {
     preset: "firebase",
   },
-  modules: ["@nuxt/image-edge"],
 });
