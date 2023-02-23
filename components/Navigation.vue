@@ -2,11 +2,7 @@
   <nav class="flex h-20 justify-center px-4 sm:px-10">
     <Frame class="flex items-center justify-between">
       <div class="flex h-full items-center">
-        <img
-          class="h-[25px] lg:h-[35px]"
-          src="~/assets/img/logo.svg"
-          alt="logo"
-        />
+        <nuxt-img class="h-[25px] lg:h-[35px]" src="/img/logo.svg" alt="logo" />
       </div>
       <div class="hidden md:block">
         <button

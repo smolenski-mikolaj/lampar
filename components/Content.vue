@@ -153,14 +153,14 @@
           </div>
         </div>
       </Frame>
-      <img
+      <nuxt-img
         class="pointer-events-none absolute left-[25%] top-0 h-12 rotate-12 md:left-[10%] md:-top-[12%] md:h-32"
-        src="~/assets/img/icons/bulb1.svg"
+        src="/img/icons/bulb1.svg"
         alt="żarówka dekoracyjna"
       />
-      <img
+      <nuxt-img
         class="pointer-events-none absolute right-[30%] top-[92%] -z-10 h-12 -rotate-12 md:right-[15%] md:top-[60%] md:h-32"
-        src="~/assets/img/icons/bulb2.svg"
+        src="/img/icons/bulb2.svg"
         alt="żarówka dekoracyjna"
       />
     </section>
@@ -209,9 +209,9 @@
           </div>
         </div>
       </Frame>
-      <img
+      <nuxt-img
         class="pointer-events-none absolute left-[5%] top-[105%] -z-10 h-12 -rotate-6 md:left-[5%] md:top-[60%] md:h-32"
-        src="~/assets/img/icons/bulb3.svg"
+        src="/img/icons/bulb3.svg"
         alt="żarówka dekoracyjna"
       />
     </section>
@@ -232,58 +232,58 @@
             v-animate-on-scroll="'bottom'"
             class="flex flex-wrap justify-center text-gray-400"
           >
-            <img
-              src="~/assets/img/partners/signify.svg"
+            <nuxt-img
+              src="/img/partners/signify.svg"
               class="my-2 mx-4 h-5"
               alt="Philips Signify"
             />
-            <img
-              src="~/assets/img/partners/osram.svg"
+            <nuxt-img
+              src="/img/partners/osram.svg"
               class="my-2 mx-4 h-5"
               alt="Osram Ledvance"
             />
-            <img
-              src="~/assets/img/partners/bega.svg"
+            <nuxt-img
+              src="/img/partners/bega.svg"
               class="mx-4 my-2 h-5"
               alt="Bega"
             />
-            <img
-              src="~/assets/img/partners/fagerhult.svg"
+            <nuxt-img
+              src="/img/partners/fagerhult.svg"
               class="mx-4 my-2 h-5"
               alt="Fagerhult"
             />
-            <img
-              src="~/assets/img/partners/modena.svg"
+            <nuxt-img
+              src="/img/partners/modena.svg"
               class="my-2 mx-4 h-5"
               alt="Modena"
             />
-            <img
-              src="~/assets/img/partners/nova.svg"
+            <nuxt-img
+              src="/img/partners/nova.svg"
               class="my-2 mx-4 h-5"
               alt="Nova Luce"
             />
-            <img
-              src="~/assets/img/partners/lutec.svg"
+            <nuxt-img
+              src="/img/partners/lutec.svg"
               class="my-2 mx-4 h-5"
               alt="Lutec"
             />
-            <img
-              src="~/assets/img/partners/lucide.svg"
+            <nuxt-img
+              src="/img/partners/lucide.svg"
               class="my-2 mx-4 h-5"
               alt="Lucide"
             />
-            <img
-              src="~/assets/img/partners/novodvorski.svg"
+            <nuxt-img
+              src="/img/partners/novodvorski.svg"
               class="my-2 mx-4 h-5"
               alt="Novodvorski"
             />
-            <img
-              src="~/assets/img/partners/labra.svg"
+            <nuxt-img
+              src="/img/partners/labra.svg"
               class="my-2 mx-4 h-5"
               alt="Labra"
             />
-            <img
-              src="~/assets/img/partners/spectra.svg"
+            <nuxt-img
+              src="/img/partners/spectra.svg"
               class="my-2 mx-4 h-5"
               alt="Spectra"
             />
@@ -362,9 +362,9 @@
           d="M0,256L48,245.3C96,235,192,213,288,208C384,203,480,213,576,224C672,235,768,245,864,256C960,267,1056,277,1152,272C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-      <img
+      <nuxt-img
         class="pointer-events-none absolute top-[60%] right-[10%] -z-10 h-12 rotate-6 md:right-[5%] md:top-[40%] md:h-32"
-        src="~/assets/img/icons/bulb4.svg"
+        src="/img/icons/bulb4.svg"
         alt="żarówka dekoracyjna"
       />
     </section>
@@ -396,9 +396,9 @@
           <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
               <div class="flex h-[100px] items-end">
-                <img
+                <nuxt-img
                   class="my-2 max-h-[100px] grayscale-[50%]"
-                  src="~/assets/img/nero.png"
+                  src="/img/nero.png"
                   alt="Green Caffe Nero"
                 />
               </div>
@@ -411,9 +411,9 @@
           <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
               <div class="flex h-[100px] items-end">
-                <img
+                <nuxt-img
                   class="my-2 max-h-[100px] grayscale-[50%]"
-                  src="~/assets/img/wilanow.png"
+                  src="/img/wilanow.png"
                   alt="Muzeum Pałacu Króla Jana III"
                 />
               </div>
@@ -431,9 +431,9 @@
           <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
               <div class="flex h-[100px] items-end">
-                <img
+                <nuxt-img
                   class="my-2 max-h-[100px] grayscale-[50%]"
-                  src="~/assets/img/mariott.png"
+                  src="/img/mariott.png"
                   alt="Mariott Hotel w Warszawie"
                 />
               </div>
@@ -447,9 +447,9 @@
           <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
               <div class="flex h-[100px] items-end">
-                <img
+                <nuxt-img
                   class="my-2 max-h-[100px] grayscale-[50%]"
-                  src="~/assets/img/american-school.png"
+                  src="/img/american-school.png"
                   alt="American School of Warsaw"
                 />
               </div>
