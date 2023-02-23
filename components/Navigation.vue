@@ -31,7 +31,7 @@
         </button>
       </div>
       <div class="flex flex-col text-[12px] sm:text-base">
-        <div class="flex items-center">
+        <a class="flex items-center" href="tel:+48608521951" role="button">
           <span class="pr-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@
             </svg>
           </span>
           <span>+48 608 521 951</span>
-        </div>
+        </a>
         <a class="flex items-center" href="mailto:lampar@lampar.com.pl">
           <span class="pr-1">
             <svg

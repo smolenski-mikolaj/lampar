@@ -10,20 +10,44 @@
         <Frame>
           <div class="flex justify-center sm:block">
             <div
-              class="flex flex-col justify-center pt-40 pb-6 text-center sm:w-1/2 sm:pt-24 sm:pb-64 sm:text-left lg:w-1/3 3xl:pb-80"
+              class="flex flex-col justify-center pt-36 pb-14 text-center sm:w-1/2 sm:pt-24 sm:pb-64 sm:text-left lg:w-1/3 3xl:pb-80"
             >
               <h1
-                class="text-[28px] font-bold leading-8 sm:text-[36px] sm:leading-9"
+                class="text-[32px pb-4 font-bold leading-8 sm:text-[36px] sm:leading-9"
               >
                 <span class="text-blue-300">Oświetlimy</span>
                 <br />
                 <span class="text-gray-100">każdy obiekt</span>
               </h1>
-              <h2 class="mt-4 pb-16 text-gray-200">
+              <h2 class="pb-4 text-gray-200">
                 Jesteśmy dystrybutorem oświetlenia profesjonalnego,
                 dekoracyjnego i awaryjnego z wieloletnim doświadczeniem na rynku
                 polskim.
               </h2>
+              <div class="flex justify-center pb-6 sm:justify-start">
+                <a
+                  class="flex w-36 items-center justify-center rounded-lg border border-blue-600 bg-blue-600/60 py-2 font-bold uppercase text-white transition-colors hover:bg-blue-600 focus:bg-blue-600 focus:outline-none active:bg-blue-600"
+                  href="tel:+48608521951"
+                  role="button"
+                >
+                  <span class="pr-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      class="h-4 w-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                      />
+                    </svg>
+                  </span>
+                  Zadzwoń</a
+                >
+              </div>
             </div>
           </div>
         </Frame>
@@ -31,7 +55,7 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
-          class="absolute -bottom-[1px] w-full"
+          class="pointer-events-none absolute -bottom-[1px] w-full"
         >
           <path
             fill="#ffffff"
@@ -352,7 +376,7 @@
       </div>
 
       <svg
-        class="absolute bottom-0 -z-10 w-full"
+        class="pointer-events-none absolute bottom-0 -z-10 w-full"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >
