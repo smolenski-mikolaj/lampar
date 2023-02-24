@@ -2,7 +2,7 @@
   <div class="bg-gray-200 px-6 sm:px-10">
     <div class="flex justify-center">
       <Frame class="text-center">
-        <div class="mb-10" v-animate-on-scroll>
+        <div class="mb-10">
           <p class="text-[24px] font-semibold">LAMPAR S.J.</p>
           <p class="mt-1 mb-2 leading-tight text-gray-500">
             02-969 Warszawa,<br />
@@ -13,7 +13,7 @@
           </p>
         </div>
 
-        <div class="mb-4 flex flex-col" v-animate-on-scroll>
+        <div class="mb-4 flex flex-col">
           <div class="flex justify-center">
             <a class="flex" href="tel:+48608521951" role="button">
               <span class="pr-1">

@@ -1,15 +1,18 @@
 <template>
   <main class="overflow-x-hidden">
     <section
-      class="relative -mt-40 mb-40 bg-[url('/img/interior.jpg')] bg-cover bg-right-top opacity-5 transition-all duration-1000 ease-in-out"
-      ref="headingSection"
+      class="relative -mt-40 mb-40 bg-[url('/img/interior.jpg')] bg-cover bg-right-top opacity-5 transition-[margin_opacity] duration-1000 ease-in-out"
+      ref="introSection"
     >
       <div
         class="pointer-events-none absolute top-0 left-0 h-full w-full bg-gradient-to-t from-blue-800 via-blue-800/70 sm:bg-gradient-to-r"
       ></div>
       <div class="relative flex justify-center px-6 sm:px-10">
         <Frame>
-          <div class="flex justify-center sm:block">
+          <div
+            class="-mt-40 mb-40 flex justify-center opacity-25 transition-[margin_opacity] delay-300 duration-1000 ease-in-out sm:block"
+            ref="headingsSection"
+          >
             <div
               class="flex flex-col justify-center pt-52 pb-14 text-center sm:w-1/2 sm:pt-44 sm:pb-64 sm:text-left lg:w-1/3 3xl:pb-80"
             >
@@ -70,7 +73,7 @@
       class="relative flex justify-center px-6 pt-10 pb-10 md:-mt-8 md:pt-0 2xl:-mt-16 2xl:pt-0"
     >
       <div
-        class="mt-40 -mb-40 opacity-5 transition-all duration-1000 ease-in-out"
+        class="mt-40 -mb-40 opacity-5 transition-[margin_opacity] duration-1000 ease-in-out"
         ref="contentSection"
       >
         <Frame id="about" class="pt-6">
@@ -411,15 +414,12 @@
       </svg>
       <Frame wide>
         <div class="mb-8">
-          <h4
-            v-animate-on-scroll="'bottom'"
-            class="text-[24px] font-bold text-gray-800 md:text-[28px]"
-          >
+          <h4 class="text-[24px] font-bold text-gray-800 md:text-[28px]">
             Nasze <span class="text-blue-500">realizacje</span>
           </h4>
         </div>
         <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <div class="flex justify-center" v-animate-on-scroll="'bottom'">
+          <div class="flex justify-center">
             <div>
               <div class="flex h-[100px] items-end justify-center">
                 <img
@@ -434,7 +434,7 @@
             </div>
           </div>
 
-          <div class="flex justify-center" v-animate-on-scroll="'bottom'">
+          <div class="flex justify-center">
             <div>
               <div class="flex h-[100px] items-end justify-center">
                 <img
@@ -454,7 +454,7 @@
             </div>
           </div>
 
-          <div class="flex justify-center" v-animate-on-scroll="'bottom'">
+          <div class="flex justify-center">
             <div>
               <div class="flex h-[100px] items-end justify-center">
                 <img
@@ -470,7 +470,7 @@
             </div>
           </div>
 
-          <div class="flex justify-center" v-animate-on-scroll="'bottom'">
+          <div class="flex justify-center">
             <div>
               <div class="flex h-[100px] items-end justify-center">
                 <img
@@ -488,10 +488,7 @@
         </div>
 
         <div class="mt-4 mb-20">
-          <div
-            class="flex flex-wrap justify-center text-sm"
-            v-animate-on-scroll="'bottom'"
-          >
+          <div class="flex flex-wrap justify-center text-sm">
             <ListItem :icon="false" class="m-1 bg-gray-200 py-2 text-sm">
               <span class="font-semibold">Nexteam</span> - Opel Dealer
             </ListItem>
@@ -535,19 +532,11 @@
         </div>
 
         <div class="mb-4">
-          <h4
-            v-animate-on-scroll="'bottom'"
-            class="text-[24px] font-bold md:text-[28px]"
-          >
-            Partnerzy
-          </h4>
+          <h4 class="text-[24px] font-bold md:text-[28px]">Partnerzy</h4>
         </div>
 
         <div class="mb-10">
-          <div
-            class="relative flex flex-wrap justify-center text-sm"
-            v-animate-on-scroll="'bottom'"
-          >
+          <div class="relative flex flex-wrap justify-center text-sm">
             <ListItem
               :icon="false"
               class="m-1 bg-gray-200 py-2 text-sm font-semibold"
@@ -675,12 +664,9 @@
     <section class="flex justify-center bg-gray-200 px-10 pb-10" id="contact">
       <Frame wide class="rounded-xl p-5 text-gray-800">
         <div class="grid grid-cols-1 md:grid-cols-3 md:gap-12">
-          <div class="mb-20 md:mb-0">
+          <div>
             <form @submit.prevent="handleContactFormSubmit">
-              <div
-                class="text-center md:text-left"
-                v-animate-on-scroll="'bottom-left'"
-              >
+              <div class="text-center md:text-left">
                 <h4
                   class="text-[24px] font-bold leading-tight text-gray-800 md:text-[28px]"
                 >
@@ -692,7 +678,7 @@
               </div>
 
               <div class="mb-2">
-                <div v-animate-on-scroll="'bottom-left'">
+                <div>
                   <label for="name" class="text-left text-sm text-gray-600"
                     >Imię i nazwisko</label
                   >
@@ -710,7 +696,7 @@
               </div>
 
               <div class="mb-2">
-                <div v-animate-on-scroll="'bottom-left'">
+                <div>
                   <label for="email" class="text-left text-sm text-gray-600"
                     >Adres email</label
                   >
@@ -728,7 +714,7 @@
               </div>
 
               <div class="mb-2">
-                <div v-animate-on-scroll="'bottom-left'">
+                <div>
                   <label for="message" class="text-left text-sm text-gray-600"
                     >Treść wiadomości</label
                   >
@@ -747,7 +733,7 @@
               </div>
 
               <div class="mb-4 flex items-center">
-                <div v-animate-on-scroll="'bottom-left'">
+                <div>
                   <input
                     class="h-4 w-4 cursor-pointer rounded border-gray-300 bg-gray-100 text-blue-600 focus:outline-none"
                     type="checkbox"
@@ -782,7 +768,7 @@
               <div
                 class="flex flex-col items-center justify-center md:flex-row md:justify-start"
               >
-                <div v-animate-on-scroll="'bottom-left'">
+                <div>
                   <button
                     type="submit"
                     class="rounded bg-gray-600 py-2 px-4 font-bold text-white focus:bg-gray-800 focus:outline-none"
@@ -840,12 +826,12 @@
               </div>
             </div>
           </div>
-          <div class="col-span-2">
+          <div class="col-span-2 md:mt-2 md:pt-24">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.714378339727!2d21.097547716078935!3d52.1213254734496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47192c5260352ee7%3A0xc024d035d44e6462!2sLampar.%20Dealer%20Philips!5e0!3m2!1spl!2spl!4v1672233510487!5m2!1spl!2spl"
               width="100%"
               height="100%"
-              class="min-h-[200px] rounded-xl border grayscale sm:min-h-[500px]"
+              class="max-h-[500px] min-h-[200px] rounded-xl border grayscale sm:min-h-[500px]"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
@@ -884,12 +870,14 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 
-const headingSection = ref(null as HTMLElement | null);
+const introSection = ref(null as HTMLElement | null);
+const headingsSection = ref(null as HTMLElement | null);
 const contentSection = ref(null as HTMLElement | null);
 const cookiesDialog = ref(null as HTMLElement | null);
 
 onMounted(() => {
-  headingSection.value?.classList.add("!my-0", "!opacity-100");
+  introSection.value?.classList.add("!my-0", "!opacity-100");
+  headingsSection.value?.classList.add("!my-0", "!opacity-100");
   contentSection.value?.classList.add("!my-0", "!opacity-100");
   cookiesDialog.value?.classList.add("!bottom-0", "!opacity-100");
 });
