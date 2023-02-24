@@ -421,9 +421,9 @@
         <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
           <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
-              <div class="flex h-[100px] items-end">
+              <div class="flex h-[100px] items-end justify-center">
                 <img
-                  class="my-2 max-h-[100px] grayscale-[50%]"
+                  class="my-2 max-h-[100px] max-w-[90%] grayscale-[50%]"
                   src="/img/nero.png"
                   alt="Green Caffe Nero"
                 />
@@ -436,9 +436,9 @@
 
           <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
-              <div class="flex h-[100px] items-end">
+              <div class="flex h-[100px] items-end justify-center">
                 <img
-                  class="my-2 max-h-[100px] grayscale-[50%]"
+                  class="my-2 max-h-[100px] max-w-[90%] grayscale-[50%]"
                   src="/img/wilanow.png"
                   alt="Muzeum Pałacu Króla Jana III"
                 />
@@ -456,9 +456,9 @@
 
           <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
-              <div class="flex h-[100px] items-end">
+              <div class="flex h-[100px] items-end justify-center">
                 <img
-                  class="my-2 max-h-[100px] grayscale-[50%]"
+                  class="my-2 max-h-[100px] max-w-[90%] grayscale-[50%]"
                   src="/img/mariott.png"
                   alt="Mariott Hotel w Warszawie"
                 />
@@ -472,9 +472,9 @@
 
           <div class="flex justify-center" v-animate-on-scroll="'bottom'">
             <div>
-              <div class="flex h-[100px] items-end">
+              <div class="flex h-[100px] items-end justify-center">
                 <img
-                  class="my-2 max-h-[100px] grayscale-[50%]"
+                  class="my-2 max-h-[100px] max-w-[90%] grayscale-[50%]"
                   src="/img/american-school.png"
                   alt="American School of Warsaw"
                 />
