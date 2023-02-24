@@ -1,7 +1,8 @@
 <template>
   <main class="overflow-x-hidden">
     <section
-      class="relative bg-[url('/img/interior.jpg')] bg-cover bg-right-top"
+      class="relative -mt-40 mb-40 bg-[url('/img/interior.jpg')] bg-cover bg-right-top opacity-5 transition-all duration-1000 ease-in-out"
+      ref="headingSection"
     >
       <div
         class="pointer-events-none absolute top-0 left-0 h-full w-full bg-gradient-to-t from-blue-800 via-blue-800/70 sm:bg-gradient-to-r"
@@ -10,10 +11,10 @@
         <Frame>
           <div class="flex justify-center sm:block">
             <div
-              class="flex flex-col justify-center pt-36 pb-14 text-center sm:w-1/2 sm:pt-24 sm:pb-64 sm:text-left lg:w-1/3 3xl:pb-80"
+              class="flex flex-col justify-center pt-52 pb-14 text-center sm:w-1/2 sm:pt-44 sm:pb-64 sm:text-left lg:w-1/3 3xl:pb-80"
             >
               <h1
-                class="text-[32px pb-4 font-bold leading-8 sm:text-[36px] sm:leading-9"
+                class="pb-4 text-[32px] font-bold leading-8 sm:text-[36px] sm:leading-9"
               >
                 <span class="text-blue-300">Oświetlimy</span>
                 <br />
@@ -68,115 +69,116 @@
     <section
       class="relative flex justify-center px-6 pt-10 pb-10 md:-mt-8 md:pt-0 2xl:-mt-16 2xl:pt-0"
     >
-      <Frame id="about" class="pt-6">
-        <div>
-          <div class="text-center text-gray-800">
-            <div class="mb-2">
-              <h4
-                v-animate-on-scroll="'bottom'"
-                class="text-[24px] font-bold leading-6 text-gray-800 md:text-[28px] md:leading-8"
-              >
-                Kompleksowo realizujemy inwestycje
-              </h4>
+      <div
+        class="mt-40 -mb-40 opacity-5 transition-all duration-1000 ease-in-out"
+        ref="contentSection"
+      >
+        <Frame id="about" class="pt-6">
+          <div>
+            <div class="text-center text-gray-800">
+              <div class="mb-2">
+                <h4
+                  class="text-[24px] font-bold leading-6 text-gray-800 md:text-[28px] md:leading-8"
+                >
+                  Kompleksowo realizujemy inwestycje
+                </h4>
+              </div>
+              <div class="px-4 pb-4 md:px-24 xl:px-48">
+                <p class="text-center text-gray-600">
+                  Oświetlamy obiekty użyteczności publicznej - biura, szkoły,
+                  centra handlowe, hotele, przychodnie, gabinety, restauracje,
+                  sklepy.
+                </p>
+              </div>
             </div>
-            <div class="px-4 pb-4 md:px-24 xl:px-48">
-              <p
-                v-animate-on-scroll="'bottom'"
-                class="text-center text-gray-600"
-              >
-                Oświetlamy obiekty użyteczności publicznej - biura, szkoły,
-                centra handlowe, hotele, przychodnie, gabinety, restauracje,
-                sklepy.
-              </p>
+            <div class="flex justify-center">
+              <div class="grid grid-cols-3 gap-2">
+                <div
+                  v-animate-on-scroll
+                  class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
+                >
+                  <div class="text-center leading-6 text-white">
+                    <h4 class="text-[24px] font-bold sm:text-[32px]">
+                      <span v-countdown-on-scroll>30</span
+                      ><span class="inline-block">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="h-4 w-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 4.5v15m7.5-7.5h-15"
+                          />
+                        </svg>
+                      </span>
+                    </h4>
+                    <p class="mt-1 text-sm">lat w branży</p>
+                  </div>
+                </div>
+                <div
+                  v-animate-on-scroll
+                  class="mb-1 mt-4 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
+                >
+                  <div class="text-center leading-6 text-white">
+                    <h4 class="text-[24px] font-bold sm:text-[32px]">
+                      <span v-countdown-on-scroll>500</span
+                      ><span class="inline-block">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="h-4 w-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 4.5v15m7.5-7.5h-15"
+                          />
+                        </svg>
+                      </span>
+                    </h4>
+                    <p class="mt-1 text-sm">realizacji</p>
+                  </div>
+                </div>
+                <div
+                  v-animate-on-scroll
+                  class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
+                >
+                  <div class="text-center leading-6 text-white">
+                    <h4 class="text-[24px] font-bold sm:text-[32px]">
+                      <span v-countdown-on-scroll>20</span
+                      ><span class="inline-block">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="h-4 w-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 4.5v15m7.5-7.5h-15"
+                          />
+                        </svg>
+                      </span>
+                    </h4>
+                    <p class="mt-1 max-w-[150px] text-sm">producentów</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flex justify-center">
-            <div class="grid grid-cols-3 gap-2">
-              <div
-                v-animate-on-scroll
-                class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
-              >
-                <div class="text-center leading-6 text-white">
-                  <h4 class="text-[24px] font-bold sm:text-[32px]">
-                    <span v-countdown-on-scroll>30</span
-                    ><span class="inline-block">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-4 w-4"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 4.5v15m7.5-7.5h-15"
-                        />
-                      </svg>
-                    </span>
-                  </h4>
-                  <p class="mt-1 text-sm">lat w branży</p>
-                </div>
-              </div>
-              <div
-                v-animate-on-scroll
-                class="mb-1 mt-4 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
-              >
-                <div class="text-center leading-6 text-white">
-                  <h4 class="text-[24px] font-bold sm:text-[32px]">
-                    <span v-countdown-on-scroll>500</span
-                    ><span class="inline-block">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-4 w-4"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 4.5v15m7.5-7.5h-15"
-                        />
-                      </svg>
-                    </span>
-                  </h4>
-                  <p class="mt-1 text-sm">realizacji</p>
-                </div>
-              </div>
-              <div
-                v-animate-on-scroll
-                class="my-3 flex items-center justify-center rounded-xl bg-gray-800 p-2 sm:p-5"
-              >
-                <div class="text-center leading-6 text-white">
-                  <h4 class="text-[24px] font-bold sm:text-[32px]">
-                    <span v-countdown-on-scroll>20</span
-                    ><span class="inline-block">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="h-4 w-4"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 4.5v15m7.5-7.5h-15"
-                        />
-                      </svg>
-                    </span>
-                  </h4>
-                  <p class="mt-1 max-w-[150px] text-sm">producentów</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Frame>
+        </Frame>
+      </div>
       <img
         class="pointer-events-none absolute left-[25%] top-0 h-12 rotate-12 md:left-[10%] md:-top-[12%] md:h-32"
         src="/img/icons/bulb1.svg"
@@ -393,7 +395,7 @@
       />
     </section>
     <section
-      class="relative flex justify-center bg-gray-100 px-8 pb-12 text-center sm:px-10 sm:pb-40"
+      class="relative flex justify-center bg-gray-100 pt-8 pb-12 text-center sm:px-10 sm:pb-40"
       id="portfolio"
     >
       <svg
@@ -677,7 +679,7 @@
             <form @submit.prevent="handleContactFormSubmit">
               <div
                 class="text-center md:text-left"
-                v-animate-on-scroll="'bottom'"
+                v-animate-on-scroll="'bottom-left'"
               >
                 <h4
                   class="text-[24px] font-bold leading-tight text-gray-800 md:text-[28px]"
@@ -690,7 +692,7 @@
               </div>
 
               <div class="mb-2">
-                <div v-animate-on-scroll>
+                <div v-animate-on-scroll="'bottom-left'">
                   <label for="name" class="text-left text-sm text-gray-600"
                     >Imię i nazwisko</label
                   >
@@ -708,7 +710,7 @@
               </div>
 
               <div class="mb-2">
-                <div v-animate-on-scroll>
+                <div v-animate-on-scroll="'bottom-left'">
                   <label for="email" class="text-left text-sm text-gray-600"
                     >Adres email</label
                   >
@@ -726,7 +728,7 @@
               </div>
 
               <div class="mb-2">
-                <div v-animate-on-scroll>
+                <div v-animate-on-scroll="'bottom-left'">
                   <label for="message" class="text-left text-sm text-gray-600"
                     >Treść wiadomości</label
                   >
@@ -745,7 +747,7 @@
               </div>
 
               <div class="mb-4 flex items-center">
-                <div v-animate-on-scroll>
+                <div v-animate-on-scroll="'bottom-left'">
                   <input
                     class="h-4 w-4 cursor-pointer rounded border-gray-300 bg-gray-100 text-blue-600 focus:outline-none"
                     type="checkbox"
@@ -772,6 +774,7 @@
               </div>
 
               <div
+                v-animate-on-scroll
                 class="g-recaptcha mb-6 overflow-auto"
                 data-sitekey="6LccYDQkAAAAACgAh9TlKCkn2L_OnwZg7up7AAnd"
               ></div>
@@ -779,7 +782,7 @@
               <div
                 class="flex flex-col items-center justify-center md:flex-row md:justify-start"
               >
-                <div v-animate-on-scroll>
+                <div v-animate-on-scroll="'bottom-left'">
                   <button
                     type="submit"
                     class="rounded bg-gray-600 py-2 px-4 font-bold text-white focus:bg-gray-800 focus:outline-none"
@@ -876,7 +879,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+
+const headingSection = ref(null as HTMLElement | null);
+const contentSection = ref(null as HTMLElement | null);
+
+onMounted(() => {
+  headingSection.value?.classList.add("!my-0", "!opacity-100");
+  contentSection.value?.classList.add("!my-0", "!opacity-100");
+});
+
 const sendingMessage = ref(false);
 const messageSent = ref(false);
 const messageSendingError = ref(false);

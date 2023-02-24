@@ -2,4 +2,6 @@
   <Navigation />
   <Content />
   <FooterSection />
+
+  <Preloader />
 </template>

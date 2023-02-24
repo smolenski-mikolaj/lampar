@@ -31,7 +31,7 @@
                   />
                 </svg>
               </span>
-              <span>+48 608 521 951</span>
+              <span>608 521 951</span>
             </a>
           </div>
           <div class="flex justify-center">
