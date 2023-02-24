@@ -860,7 +860,10 @@
       v-if="Boolean(cookiesAccepted) !== true"
       class="fixed bottom-0 left-0 flex w-full max-w-[400px] justify-start text-[12px]"
     >
-      <div class="mx-4 my-4 rounded bg-gray-100 px-6 py-2 shadow-lg">
+      <div
+        class="cookies-dialog absolute -bottom-[300px] m-4 rounded bg-gray-100 px-6 py-2 opacity-0 shadow-xl"
+        ref="cookiesDialog"
+      >
         Wykorzystujemy pliki cookies w celu prawidłowego działania strony,
         korzystania z narzędzi analitycznych i marketingowych oraz zapewniania
         funkcji społecznościowych. Pozostając na stronie zgadzasz się na ich
@@ -883,10 +886,12 @@ import { ref, onMounted } from "vue";
 
 const headingSection = ref(null as HTMLElement | null);
 const contentSection = ref(null as HTMLElement | null);
+const cookiesDialog = ref(null as HTMLElement | null);
 
 onMounted(() => {
   headingSection.value?.classList.add("!my-0", "!opacity-100");
   contentSection.value?.classList.add("!my-0", "!opacity-100");
+  cookiesDialog.value?.classList.add("!bottom-0", "!opacity-100");
 });
 
 const sendingMessage = ref(false);
@@ -947,6 +952,12 @@ const handleContactFormSubmit = async () => {
   }, 10000);
 };
 </script>
+
+<style scoped>
+.cookies-dialog {
+  transition: bottom 1.5s ease-in-out 2s, opacity 0.5s ease-in-out 3s;
+}
+</style>
 
 <style>
 .v-enter-active,
