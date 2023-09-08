@@ -253,7 +253,7 @@
             v-animate-on-scroll="'bottom'"
             class="text-[24px] font-bold md:text-[28px]"
           >
-            Oprawy oświetleniowe
+            Oprawy&nbsp;oświetleniowe
           </h4>
         </div>
         <div class="mb-10">
