@@ -31,7 +31,6 @@
               <div class="flex justify-center pb-6 sm:justify-start">
                 <a
                   class="flex w-36 items-center justify-center rounded-lg border border-blue-600 bg-blue-600/60 py-2 font-bold uppercase text-white transition-colors hover:bg-blue-600 focus:bg-blue-600 focus:outline-none active:bg-blue-600"
-                  href="tel:+48608521951"
                   role="button"
                 >
                   <span class="pr-2">
@@ -912,32 +911,10 @@ const handleContactFormSubmit = async () => {
 
   sendingMessage.value = true;
 
-  try {
-    await $fetch("/api/sendMail", {
-      method: "POST",
-      body: JSON.stringify({
-        name: contactForm.value.name,
-        email: contactForm.value.email,
-        message: contactForm.value.message,
-      }),
-    });
-
-    messageSent.value = true;
-    sendingMessage.value = false;
-    contactForm.value = {
-      name: "",
-      email: "",
-      message: "",
-    };
-  } catch (error) {
-    sendingMessage.value = false;
-    messageSendingError.value = true;
-  }
-
   setTimeout(() => {
-    messageSent.value = false;
+    sendingMessage.value = false;
     messageSendingError.value = false;
-  }, 10000);
+  }, 2000);
 };
 </script>
 
