@@ -1,12 +1,14 @@
 {
   "private": true,
   "license": "AGPL",
-  "homepage": "https://lampar.com.pl/",
+  "homepage": "https://lampar-cbde4.web.app/",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "deploy": "npm run build && cd .output/server && rd /s /q node_modules && npm install && cd ../../ && copy \".env\" \"./.output/server\" && firebase deploy",
     "generate": "nuxt generate",
+    "static:build": "npx nuxi generate",
+    "static:deploy": "npm run static:build && firebase deploy --only hosting",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
@@ -21,8 +23,5 @@
     "prettier": "2.8.1",
     "prettier-plugin-tailwindcss": "0.2.1",
     "tailwindcss": "3.2.4"
-  },
-  "dependencies": {
-    "nodemailer": "6.9.1"
   }
 }

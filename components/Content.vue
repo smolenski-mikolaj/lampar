@@ -31,7 +31,6 @@
               <div class="flex justify-center pb-6 sm:justify-start">
                 <a
                   class="flex w-36 items-center justify-center rounded-lg border border-blue-600 bg-blue-600/60 py-2 font-bold uppercase text-white transition-colors hover:bg-blue-600 focus:bg-blue-600 focus:outline-none active:bg-blue-600"
-                  href="tel:+48608521951"
                   role="button"
                 >
                   <span class="pr-2">
@@ -257,10 +256,7 @@
           </h4>
         </div>
         <div class="mb-10">
-          <div
-            v-animate-on-scroll="'bottom'"
-            class="flex flex-wrap justify-center text-gray-400"
-          >
+          <div class="flex flex-wrap justify-center text-gray-400">
             <img
               src="/img/partners/signify.svg"
               class="my-2 mx-4 h-5"
@@ -328,10 +324,7 @@
           </h4>
         </div>
 
-        <div
-          class="flex flex-wrap justify-center text-sm"
-          v-animate-on-scroll="'bottom'"
-        >
+        <div class="flex flex-wrap justify-center text-sm">
           <ListItem
             :icon="false"
             class="m-1 bg-gray-100 py-2 text-sm font-semibold"
@@ -868,77 +861,55 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, onMounted } from 'vue'
 
-const introSection = ref(null as HTMLElement | null);
-const headingsSection = ref(null as HTMLElement | null);
-const contentSection = ref(null as HTMLElement | null);
-const cookiesDialog = ref(null as HTMLElement | null);
+const introSection = ref(null as HTMLElement | null)
+const headingsSection = ref(null as HTMLElement | null)
+const contentSection = ref(null as HTMLElement | null)
+const cookiesDialog = ref(null as HTMLElement | null)
 
 onMounted(() => {
-  introSection.value?.classList.add("!my-0", "!opacity-100");
-  headingsSection.value?.classList.add("!my-0", "!opacity-100");
-  contentSection.value?.classList.add("!my-0", "!opacity-100");
-  cookiesDialog.value?.classList.add("!bottom-0", "!opacity-100");
-});
+  introSection.value?.classList.add('!my-0', '!opacity-100')
+  headingsSection.value?.classList.add('!my-0', '!opacity-100')
+  contentSection.value?.classList.add('!my-0', '!opacity-100')
+  cookiesDialog.value?.classList.add('!bottom-0', '!opacity-100')
+})
 
-const sendingMessage = ref(false);
-const messageSent = ref(false);
-const messageSendingError = ref(false);
-const recaptchaError = ref(false);
+const sendingMessage = ref(false)
+const messageSent = ref(false)
+const messageSendingError = ref(false)
+const recaptchaError = ref(false)
 
-const cookiesAccepted = useCookie("cookiesAccepted", {
+const cookiesAccepted = useCookie('cookiesAccepted', {
   maxAge: 60 * 60 * 24 * 400,
-});
+})
 
 const contactForm = ref({
-  name: "",
-  email: "",
-  message: "",
-});
+  name: '',
+  email: '',
+  message: '',
+})
 
 const handleContactFormSubmit = async () => {
   // @ts-ignore
-  const recaptchaResponse = await grecaptcha.getResponse();
+  const recaptchaResponse = await grecaptcha.getResponse()
 
   if (!recaptchaResponse) {
-    recaptchaError.value = true;
+    recaptchaError.value = true
     setTimeout(() => {
-      recaptchaError.value = false;
-    }, 5000);
+      recaptchaError.value = false
+    }, 5000)
 
-    return;
+    return
   }
 
-  sendingMessage.value = true;
-
-  try {
-    await $fetch("/api/sendMail", {
-      method: "POST",
-      body: JSON.stringify({
-        name: contactForm.value.name,
-        email: contactForm.value.email,
-        message: contactForm.value.message,
-      }),
-    });
-
-    messageSent.value = true;
-    sendingMessage.value = false;
-    contactForm.value = {
-      name: "",
-      email: "",
-      message: "",
-    };
-  } catch (error) {
-    sendingMessage.value = false;
-    messageSendingError.value = true;
-  }
+  sendingMessage.value = true
 
   setTimeout(() => {
-    messageSent.value = false;
-    messageSendingError.value = false;
-  }, 10000);
-};
+    sendingMessage.value = false
+    messageSendingError.value = false
+  }, 2000)
+}
 </script>
 
 <style scoped>
